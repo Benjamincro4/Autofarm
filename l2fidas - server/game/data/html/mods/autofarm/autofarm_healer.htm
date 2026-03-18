@@ -1,0 +1,140 @@
+<html>
+<body>
+<center>
+  <br>
+  <img src="L2UI_CT1.Windows_DF_Header_bg" width=276 height=32>
+  <table width=276 bgcolor="#000000">
+    <tr><td align=center height=6></td></tr>
+    <tr>
+      <td align=center>
+        <font color="LEVEL">&#10022; Skills de Curación &#10022;</font>
+      </td>
+    </tr>
+    <tr><td align=center height=2></td></tr>
+    <tr>
+      <td align=center>
+        <font color="808080">(Healer / Support)</font>
+      </td>
+    </tr>
+    <tr><td height=6></td></tr>
+    <tr>
+      <td align=center>
+        <font color="B09878">Cura a si mismo y a su party segun % de HP</font>
+      </td>
+    </tr>
+    <tr><td height=4></td></tr>
+    <tr>
+      <td align=center>
+        <font color="808080">Haz click en la skill y luego usala en tu barra de skills</font>
+      </td>
+    </tr>
+    <tr><td height=8></td></tr>
+  </table>
+
+  <img src="L2UI_CT1.Windows_DF_TooltipBg" width=276 height=2>
+  <br>
+
+  <table width=276 bgcolor="#000000">
+    <tr>
+      <td align=center width=30><font color="A2A2A2">Skill</font></td>
+      <td align=center><font color="A2A2A2">Nombre</font></td>
+      <td align=center width=70><font color="A2A2A2">HP% umbral</font></td>
+      <td align=center width=24><font color="A2A2A2">Del</font></td>
+    </tr>
+    <tr><td colspan=4><img src="L2UI_CT1.Windows_DF_TooltipBg" width=276 height=1></td></tr>
+
+    <!-- Heal Slot 1 -->
+    <tr>
+      <td align=center>
+        <button action="bypass -h voice .selecthealskill heal1" width=32 height=32 back="%heal1_icon%" fore="%heal1_icon%">
+      </td>
+      <td>
+        <font color="00FF7F">%heal1_name%</font>
+      </td>
+      <td align=center>
+        <edit var="thr1" width=40 value="%heal1_threshold%">
+        <button value="OK" action="bypass -h voice .sethealthreshold heal1 $thr1" width=26 height=18 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+      </td>
+      <td align=center>
+        <button value="X" action="bypass -h voice .clearhealskill heal1" width=22 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+      </td>
+    </tr>
+    <tr><td height=2></td></tr>
+
+    <!-- Heal Slot 2 -->
+    <tr>
+      <td align=center>
+        <button action="bypass -h voice .selecthealskill heal2" width=32 height=32 back="%heal2_icon%" fore="%heal2_icon%">
+      </td>
+      <td>
+        <font color="00FF7F">%heal2_name%</font>
+      </td>
+      <td align=center>
+        <edit var="thr2" width=40 value="%heal2_threshold%">
+        <button value="OK" action="bypass -h voice .sethealthreshold heal2 $thr2" width=26 height=18 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+      </td>
+      <td align=center>
+        <button value="X" action="bypass -h voice .clearhealskill heal2" width=22 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+      </td>
+    </tr>
+    <tr><td height=2></td></tr>
+
+    <!-- Heal Slot 3 -->
+    <tr>
+      <td align=center>
+        <button action="bypass -h voice .selecthealskill heal3" width=32 height=32 back="%heal3_icon%" fore="%heal3_icon%">
+      </td>
+      <td>
+        <font color="00FF7F">%heal3_name%</font>
+      </td>
+      <td align=center>
+        <edit var="thr3" width=40 value="%heal3_threshold%">
+        <button value="OK" action="bypass -h voice .sethealthreshold heal3 $thr3" width=26 height=18 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+      </td>
+      <td align=center>
+        <button value="X" action="bypass -h voice .clearhealskill heal3" width=22 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+      </td>
+    </tr>
+    <tr><td height=2></td></tr>
+
+    <!-- Heal Slot 4 -->
+    <tr>
+      <td align=center>
+        <button action="bypass -h voice .selecthealskill heal4" width=32 height=32 back="%heal4_icon%" fore="%heal4_icon%">
+      </td>
+      <td>
+        <font color="00FF7F">%heal4_name%</font>
+      </td>
+      <td align=center>
+        <edit var="thr4" width=40 value="%heal4_threshold%">
+        <button value="OK" action="bypass -h voice .sethealthreshold heal4 $thr4" width=26 height=18 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+      </td>
+      <td align=center>
+        <button value="X" action="bypass -h voice .clearhealskill heal4" width=22 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+      </td>
+    </tr>
+    <tr><td height=8></td></tr>
+
+    <tr>
+      <td colspan=4>
+        <img src="L2UI_CT1.Windows_DF_TooltipBg" width=276 height=1>
+      </td>
+    </tr>
+    <tr><td height=4></td></tr>
+    <tr>
+      <td colspan=4 align=center>
+        <font color="A2A2A2">Umbral HP%: cura cuando el objetivo cae por debajo del %</font>
+      </td>
+    </tr>
+    <tr><td height=6></td></tr>
+    <tr>
+      <td colspan=4 align=center>
+        <button value="&#9664; Volver" action="bypass -h voice .autofarm" width=90 height=24 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+      </td>
+    </tr>
+    <tr><td height=6></td></tr>
+  </table>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<html>
+<body>
+<center>
+  <br>
+  <img src="L2UI_CT1.Windows_DF_Header_bg" width=256 height=32>
+  <table width=256 bgcolor="#000000">
+    <tr><td align=center height=6></td></tr>
+    <tr>
+      <td align=center>
+        <font color="LEVEL">&#9670; Skills de Spoiler &#9670;</font>
+      </td>
+    </tr>
+    <tr><td align=center height=2></td></tr>
+    <tr>
+      <td align=center>
+        <font color="808080">(Bounty Hunter / Scavenger)</font>
+      </td>
+    </tr>
+    <tr><td height=6></td></tr>
+    <tr>
+      <td align=center>
+        <font color="B09878">Spoil automatico + Sweep cuando el mob muere</font>
+      </td>
+    </tr>
+    <tr><td height=8></td></tr>
+  </table>
+
+  <img src="L2UI_CT1.Windows_DF_TooltipBg" width=256 height=2>
+  <br>
+
+  <table width=256 bgcolor="#000000">
+    <tr><td height=8></td></tr>
+
+    <!-- Spoil Skill -->
+    <tr>
+      <td align=center>
+        <font color="FFAA00">&#9670; SPOIL</font>
+      </td>
+    </tr>
+    <tr><td height=4></td></tr>
+    <tr>
+      <td align=center>
+        <font color="808080">Introduce el ID de tu skill Spoil</font>
+      </td>
+    </tr>
+    <tr><td height=4></td></tr>
+    <tr>
+      <td align=center>
+        <table>
+          <tr>
+            <td>
+              <button action="bypass -h voice .setspoilskill 0" width=32 height=32 back="%spoil_icon%" fore="%spoil_icon%">
+            </td>
+            <td>
+              <font color="00FF7F">%spoil_name%</font><br>
+              <edit var="spoil_id" width=70 value="">
+              <button value="Asignar" action="bypass -h voice .setspoilskill $spoil_id" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+            </td>
+            <td>
+              <button value="X" action="bypass -h voice .clearspoilskill" width=22 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr><td height=8></td></tr>
+
+    <tr>
+      <td>
+        <img src="L2UI_CT1.Windows_DF_TooltipBg" width=256 height=1>
+      </td>
+    </tr>
+    <tr><td height=8></td></tr>
+
+    <!-- Sweep Skill -->
+    <tr>
+      <td align=center>
+        <font color="FFAA00">&#9670; SWEEP</font>
+      </td>
+    </tr>
+    <tr><td height=4></td></tr>
+    <tr>
+      <td align=center>
+        <font color="808080">Introduce el ID de tu skill Sweep</font>
+      </td>
+    </tr>
+    <tr><td height=4></td></tr>
+    <tr>
+      <td align=center>
+        <table>
+          <tr>
+            <td>
+              <button action="bypass -h voice .setsweepskill 0" width=32 height=32 back="%sweep_icon%" fore="%sweep_icon%">
+            </td>
+            <td>
+              <font color="00FF7F">%sweep_name%</font><br>
+              <edit var="sweep_id" width=70 value="">
+              <button value="Asignar" action="bypass -h voice .setsweepskill $sweep_id" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+            </td>
+            <td>
+              <button value="X" action="bypass -h voice .clearsweepskill" width=22 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr><td height=8></td></tr>
+
+    <tr>
+      <td>
+        <img src="L2UI_CT1.Windows_DF_TooltipBg" width=256 height=1>
+      </td>
+    </tr>
+    <tr><td height=6></td></tr>
+
+    <tr>
+      <td align=center>
+        <font color="A2A2A2">El Sweep se aplica automaticamente cuando el mob
+        muere spoileado y tienes la skill configurada.</font>
+      </td>
+    </tr>
+    <tr><td height=6></td></tr>
+    <tr>
+      <td align=center>
+        <button value="&#9664; Volver" action="bypass -h voice .autofarm" width=90 height=24 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+      </td>
+    </tr>
+    <tr><td height=6></td></tr>
+  </table>
+
+</center>
+</body>
+</html>

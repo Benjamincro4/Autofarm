@@ -338,6 +338,12 @@ public final class L2PcInstance extends L2Playable
 	private boolean useRandomSkills = false;
 	private boolean keepStartingFarmLocation = false;
 	private int autoFarmRadius = 0;
+	// AutoFarm extended fields
+	private String _autoFarmMode = "combat"; // "combat", "healer", "spoiler"
+	private Map<String, Integer> _healerSkills = new HashMap<>();        // heal1..heal4 -> skillId
+	private Map<String, Integer> _healerHpThresholds = new HashMap<>();  // heal1..heal4 -> hpThreshold%
+	private int _autoFarmSpoilSkillId = 0;
+	private int _autoFarmSweepSkillId = 0;
 
 	// Character Skill SQL String Definitions:
 	private static final String RESTORE_SKILLS_FOR_CHAR = "SELECT skill_id,skill_level FROM character_skills WHERE charId=? AND class_index=?";
@@ -2203,6 +2209,38 @@ public final class L2PcInstance extends L2Playable
 
 	public Map<String, Integer> getAutoFarmSkills() {
 	    return _autoFarmSkills;
+	}
+
+	public Map<String, Integer> getHealerSkills() {
+	    return _healerSkills;
+	}
+
+	public Map<String, Integer> getHealerHpThresholds() {
+	    return _healerHpThresholds;
+	}
+
+	public String getAutoFarmMode() {
+	    return _autoFarmMode;
+	}
+
+	public void setAutoFarmMode(String mode) {
+	    _autoFarmMode = mode;
+	}
+
+	public int getAutoFarmSpoilSkillId() {
+	    return _autoFarmSpoilSkillId;
+	}
+
+	public void setAutoFarmSpoilSkillId(int skillId) {
+	    _autoFarmSpoilSkillId = skillId;
+	}
+
+	public int getAutoFarmSweepSkillId() {
+	    return _autoFarmSweepSkillId;
+	}
+
+	public void setAutoFarmSweepSkillId(int skillId) {
+	    _autoFarmSweepSkillId = skillId;
 	}
 	
 	/**
@@ -17546,115 +17584,224 @@ public final class L2PcInstance extends L2Playable
 	}
 
 	/**
-	 * 
+	 * Main AutoFarm tick - dispatches to the appropriate mode logic.
 	 */
 	public void checkAndUseAutoFarm() {
-	    if (this.isAutoFarmEnabled() && !this.isDead()) {
-	        // Si ya está atacando, no busques un nuevo mob
-	        if (this.isAttackingNow()) {
-	            this.sendMessage("[AutoFarm] Ya estás atacando. Esperando a terminar.");
-	            return; // No realizar más acciones mientras ataca
-	        }
+	    if (!autoFarmEnabled || isDead())
+	        return;
 
-	        // Si el target actual es válido, sigue atacándolo
-	        if (this.getTarget() instanceof L2Attackable) {
-	            L2Attackable currentTarget = (L2Attackable) this.getTarget();
-	            if (!currentTarget.isDead() && currentTarget.isAutoAttackable(this)) {
-	                this.sendMessage("[AutoFarm] Continuando ataque al mob: " + currentTarget.getName());
-	                useRandomAutoFarmSkill(currentTarget);
+	    switch (_autoFarmMode) {
+	        case "healer":  runHealerLogic();  break;
+	        case "spoiler": runSpoilerLogic(); break;
+	        default:        runCombatLogic();  break;
+	    }
+	}
+
+	// -----------------------------------------------------------------------
+	// COMBAT logic (warriors / mages)
+	// -----------------------------------------------------------------------
+	private void runCombatLogic() {
+	    if (isAttackingNow() || isCastingNow())
+	        return;
+
+	    // Follow party leader and assist their target
+	    if (assistToPartyLeader && getParty() != null) {
+	        L2PcInstance leader = getParty().getLeader();
+	        if (leader != null && leader != this) {
+	            if (getDistanceSq(leader) > 150 * 150) {
+	                getAI().setIntention(fidas.server.gameserver.ai.CtrlIntention.AI_INTENTION_FOLLOW, leader);
 	                return;
 	            }
-	        }
-
-	        // Buscar un nuevo mob si no hay target válido
-	        L2Attackable target = findClosestMob(this);
-	        if (target != null) {
-	            this.setTarget(target);
-	            this.sendMessage("[AutoFarm] Mob seleccionado: " + target.getName());
-	            target.onAction(this); // Usar onAction en lugar de doAttack
-	            this.sendMessage("[AutoFarm] Iniciando ataque a: " + target.getName());
-	            
-	            // Usar una habilidad aleatoria sobre el target
-	            useRandomAutoFarmSkill(target);
-	        } else {
-	            this.sendMessage("[AutoFarm] No se encontró un mob cercano para atacar.");
-	        }
-	    }
-	}
-	private void useRandomAutoFarmSkill(L2Attackable target) {
-	    if (target == null || target.isDead()) {
-	        return; // No hacer nada si el target no es válido
-	    }
-
-	    // Obtener las habilidades seleccionadas en AutoFarm
-	    Map<String, Integer> autoFarmSkills = this.getAutoFarmSkills();
-	    if (autoFarmSkills.isEmpty()) {
-	        this.sendMessage("[AutoFarm] No hay habilidades seleccionadas. Usando ataque básico.");
-	        this.doAttack(target);
-	        return;
-	    }
-
-	    // Seleccionar una habilidad aleatoria
-	    List<Integer> skillIds = new ArrayList<>(autoFarmSkills.values());
-	    int randomSkillId = skillIds.get(Rnd.get(skillIds.size())); // Selección aleatoria
-
-	    // Obtener la habilidad del jugador
-	    L2Skill skill = SkillTable.getInstance().getInfo(randomSkillId, this.getSkillLevel(randomSkillId));
-	    if (skill != null) {
-	        this.sendMessage("[AutoFarm] Usando habilidad: " + skill.getName() + " sobre " + target.getName());
-	        this.useMagic(skill, false, false); // Ejecutar la habilidad
-	    } else {
-	        this.sendMessage("[AutoFarm] Error: No se encontró la habilidad con ID: " + randomSkillId);
-	    }
-	}
-	
-	
-
-	
-	private static L2Attackable findClosestMob(L2PcInstance player) {
-	    player.sendMessage("[AutoFarm] Ejecutando findClosestMob...");
-
-	    // Verificar si hay objetos conocidos
-	    if (player.getKnownList().getKnownCharacters().isEmpty()) {
-	        player.sendMessage("[AutoFarm] No hay objetos conocidos en el radio de visión.");
-	        return null;
-	    }
-
-	    // Depuración: Imprimir objetos conocidos
-	    player.sendMessage("[AutoFarm] Objetos conocidos:");
-	    for (L2Character obj : player.getKnownList().getKnownCharacters()) {
-	        player.sendMessage(String.format(
-	            "Nombre: %s, Tipo: %s, Vivo: %s, Atacable: %s",
-	            obj.getName(),
-	            obj.getClass().getSimpleName(),
-	            !obj.isDead() ? "Sí" : "No",
-	            (obj instanceof L2Attackable ? ((L2Attackable) obj).isAutoAttackable(player) : "N/A")
-	        ));
-	    }
-
-	    // Buscar el mob más cercano
-	    L2Attackable closestMob = null;
-	    double closestDistance = Double.MAX_VALUE;
-
-	    for (L2Character obj : player.getKnownList().getKnownCharacters()) {
-	        if (obj instanceof L2Attackable) {
-	            L2Attackable mob = (L2Attackable) obj;
-	            if (!mob.isDead() && mob.isAutoAttackable(player)) {
-	                double distance = player.getDistanceSq(mob);
-	                if (distance < closestDistance) {
-	                    closestDistance = distance;
-	                    closestMob = mob;
+	            if (leader.getTarget() instanceof L2Attackable) {
+	                L2Attackable leaderTarget = (L2Attackable) leader.getTarget();
+	                if (!leaderTarget.isDead() && leaderTarget.isAutoAttackable(this)) {
+	                    setTarget(leaderTarget);
+	                    useCombatSkillOrAttack(leaderTarget);
+	                    return;
 	                }
 	            }
 	        }
 	    }
 
-	    if (closestMob == null) {
-	        player.sendMessage("[AutoFarm] No se encontraron mobs atacables en el radio de visión.");
-	    } else {
-	        player.sendMessage("[AutoFarm] Mob más cercano encontrado: " + closestMob.getName() + " a una distancia de " + Math.sqrt(closestDistance));
+	    // Keep attacking current valid target
+	    if (getTarget() instanceof L2Attackable) {
+	        L2Attackable current = (L2Attackable) getTarget();
+	        if (!current.isDead() && current.isAutoAttackable(this)) {
+	            useCombatSkillOrAttack(current);
+	            return;
+	        }
 	    }
 
+	    // Find a new mob within the configured radius
+	    L2Attackable target = findClosestMob(this);
+	    if (target != null) {
+	        setTarget(target);
+	        target.onAction(this);
+	        useCombatSkillOrAttack(target);
+	    }
+	}
+
+	/**
+	 * Uses the next ready combat skill from configured slots, or falls back to basic attack.
+	 * When useRandomSkills is true, picks a random slot; otherwise iterates in order.
+	 */
+	private void useCombatSkillOrAttack(L2Attackable target) {
+	    if (target == null || target.isDead())
+	        return;
+
+	    Map<String, Integer> slots = getAutoFarmSkills();
+	    if (slots.isEmpty()) {
+	        doAttack(target);
+	        return;
+	    }
+
+	    List<String> keys = new ArrayList<>(slots.keySet());
+	    if (useRandomSkills)
+	        java.util.Collections.shuffle(keys);
+
+	    for (String key : keys) {
+	        int skillId = slots.get(key);
+	        int level = getSkillLevel(skillId);
+	        if (level < 1) continue;
+	        L2Skill skill = SkillTable.getInstance().getInfo(skillId, level);
+	        if (skill != null && !isSkillDisabled(skill)) {
+	            useMagic(skill, false, false);
+	            return;
+	        }
+	    }
+	    doAttack(target);
+	}
+
+	// -----------------------------------------------------------------------
+	// HEALER logic
+	// -----------------------------------------------------------------------
+	private void runHealerLogic() {
+	    if (isCastingNow())
+	        return;
+
+	    // Collect targets: self + party members (alive)
+	    List<L2PcInstance> targets = new ArrayList<>();
+	    targets.add(this);
+	    if (getParty() != null) {
+	        for (L2PcInstance member : getParty().getMembers()) {
+	            if (member != this && !member.isDead())
+	                targets.add(member);
+	        }
+	    }
+
+	    // Sort by HP% ascending (most critical first)
+	    targets.sort((a, b) -> Double.compare(
+	        a.getCurrentHp() / a.getMaxHp(),
+	        b.getCurrentHp() / b.getMaxHp()
+	    ));
+
+	    // Iterate heal slots in priority order
+	    String[] healSlots = {"heal1", "heal2", "heal3", "heal4"};
+	    for (L2PcInstance healTarget : targets) {
+	        if (healTarget.isDead()) continue;
+	        double hpPct = (healTarget.getCurrentHp() / healTarget.getMaxHp()) * 100.0;
+
+	        for (String slot : healSlots) {
+	            Integer skillId = _healerSkills.get(slot);
+	            if (skillId == null) continue;
+	            int threshold = _healerHpThresholds.getOrDefault(slot, 70);
+	            if (hpPct > threshold) continue;
+
+	            int level = getSkillLevel(skillId);
+	            if (level < 1) continue;
+	            L2Skill skill = SkillTable.getInstance().getInfo(skillId, level);
+	            if (skill == null || isSkillDisabled(skill)) continue;
+
+	            setTarget(healTarget);
+	            useMagic(skill, false, false);
+	            return;
+	        }
+	    }
+	}
+
+	// -----------------------------------------------------------------------
+	// SPOILER logic
+	// -----------------------------------------------------------------------
+	private void runSpoilerLogic() {
+	    if (isAttackingNow() || isCastingNow())
+	        return;
+
+	    // If current target is a dead spoiled mob, try to sweep it
+	    if (getTarget() instanceof L2Attackable) {
+	        L2Attackable lastTarget = (L2Attackable) getTarget();
+	        if (lastTarget.isDead() && lastTarget.isSweepActive() && _autoFarmSweepSkillId > 0) {
+	            int level = getSkillLevel(_autoFarmSweepSkillId);
+	            if (level >= 1) {
+	                L2Skill sweep = SkillTable.getInstance().getInfo(_autoFarmSweepSkillId, level);
+	                if (sweep != null && !isSkillDisabled(sweep)) {
+	                    useMagic(sweep, false, false);
+	                    return;
+	                }
+	            }
+	        }
+	    }
+
+	    // Follow party leader if enabled
+	    if (assistToPartyLeader && getParty() != null) {
+	        L2PcInstance leader = getParty().getLeader();
+	        if (leader != null && leader != this && getDistanceSq(leader) > 150 * 150) {
+	            getAI().setIntention(fidas.server.gameserver.ai.CtrlIntention.AI_INTENTION_FOLLOW, leader);
+	            return;
+	        }
+	    }
+
+	    // Find / keep current mob target
+	    L2Attackable target = null;
+	    if (getTarget() instanceof L2Attackable) {
+	        L2Attackable current = (L2Attackable) getTarget();
+	        if (!current.isDead() && current.isAutoAttackable(this))
+	            target = current;
+	    }
+	    if (target == null) {
+	        target = findClosestMob(this);
+	        if (target != null) {
+	            setTarget(target);
+	            target.onAction(this);
+	        }
+	    }
+	    if (target == null) return;
+
+	    // Use spoil skill if mob not yet spoiled and skill is configured
+	    if (target.getIsSpoiledBy() == 0 && _autoFarmSpoilSkillId > 0) {
+	        int level = getSkillLevel(_autoFarmSpoilSkillId);
+	        if (level >= 1) {
+	            L2Skill spoil = SkillTable.getInstance().getInfo(_autoFarmSpoilSkillId, level);
+	            if (spoil != null && !isSkillDisabled(spoil)) {
+	                useMagic(spoil, false, false);
+	                return;
+	            }
+	        }
+	    }
+
+	    // Default: basic attack to kill the mob
+	    doAttack(target);
+	}
+
+	// -----------------------------------------------------------------------
+	// Shared helper: find the closest attackable mob within the configured radius
+	// -----------------------------------------------------------------------
+	private static L2Attackable findClosestMob(L2PcInstance player) {
+	    L2Attackable closestMob = null;
+	    double closestDistance = Double.MAX_VALUE;
+	    int radius = player.getAutoFarmRadius();
+	    double radiusSq = (radius > 0) ? (double) radius * radius : Double.MAX_VALUE;
+
+	    for (L2Character obj : player.getKnownList().getKnownCharacters()) {
+	        if (!(obj instanceof L2Attackable)) continue;
+	        L2Attackable mob = (L2Attackable) obj;
+	        if (mob.isDead() || !mob.isAutoAttackable(player)) continue;
+	        double dist = player.getDistanceSq(mob);
+	        if (dist > radiusSq) continue;
+	        if (dist < closestDistance) {
+	            closestDistance = dist;
+	            closestMob = mob;
+	        }
+	    }
 	    return closestMob;
 	}
 	
@@ -17702,19 +17849,29 @@ public final class L2PcInstance extends L2Playable
 	}
 
 		
-		//Autofarm saveAutofarmConfig  Enable/disable - Assist pt leader / Use random Skills / keep starting farm Location / Radius
+	//Autofarm saveAutofarmConfig - persists all config including mode, healer slots, spoiler skills
 	public void saveAutofarmConfig() {
-	    Connection con = null;
-	    try {
-	        con = L2DatabaseFactory.getInstance().getConnection();
-	        PreparedStatement statement = con.prepareStatement("UPDATE characters SET autofarm_config=? WHERE charId=?");
-	        statement.setString(1, assistToPartyLeader + ";" + useRandomSkills + ";" + keepStartingFarmLocation + ";" + autoFarmRadius);
-	        statement.setInt(2, getObjectId());
-	        statement.executeUpdate();
-	        statement.close();
+	    try (java.sql.Connection con = L2DatabaseFactory.getInstance().getConnection()) {
+	        // Build healer slots string: heal1SkillId:threshold|heal2SkillId:threshold|...
+	        StringBuilder healerBuilder = new StringBuilder();
+	        for (String slot : new String[]{"heal1","heal2","heal3","heal4"}) {
+	            Integer sid = _healerSkills.get(slot);
+	            int thr = _healerHpThresholds.getOrDefault(slot, 70);
+	            healerBuilder.append(sid != null ? sid : 0).append(":").append(thr).append("|");
+	        }
+	        String cfg = assistToPartyLeader + ";" + useRandomSkills + ";" + keepStartingFarmLocation + ";"
+	                   + autoFarmRadius + ";" + _autoFarmMode + ";"
+	                   + _autoFarmSpoilSkillId + ";" + _autoFarmSweepSkillId + ";"
+	                   + healerBuilder.toString();
+
+	        PreparedStatement ps = con.prepareStatement("UPDATE characters SET autofarm_config=? WHERE charId=?");
+	        ps.setString(1, cfg);
+	        ps.setInt(2, getObjectId());
+	        ps.executeUpdate();
+	        ps.close();
 	    } catch (Exception e) {
-	        _log.warning("Error al guardar la configuración del AutoFarm para el personaje " + getName() + ": " + e.getMessage());
-	    } 
+	        _log.warning("Error saving AutoFarm config for " + getName() + ": " + e.getMessage());
+	    }
 	}
 
 		
@@ -17725,18 +17882,37 @@ public final class L2PcInstance extends L2Playable
 		        useRandomSkills = false;
 		        keepStartingFarmLocation = false;
 		        autoFarmRadius = 0;
+		        _autoFarmMode = "combat";
+		        _autoFarmSpoilSkillId = 0;
+		        _autoFarmSweepSkillId = 0;
 		        return;
 		    }
 
 		    String[] parts = config.split(";");
-		    if (parts.length == 4) {
-		        this.assistToPartyLeader = Boolean.parseBoolean(parts[0]);
-		        this.useRandomSkills = Boolean.parseBoolean(parts[1]);
-		        this.keepStartingFarmLocation = Boolean.parseBoolean(parts[2]);
-		        try {
-		        	this.autoFarmRadius = Integer.parseInt(parts[3]);
-		        } catch (NumberFormatException e) {
-		        	this.autoFarmRadius = 0;
+		    // Legacy format: 4 parts
+		    if (parts.length >= 4) {
+		        assistToPartyLeader = Boolean.parseBoolean(parts[0]);
+		        useRandomSkills = Boolean.parseBoolean(parts[1]);
+		        keepStartingFarmLocation = Boolean.parseBoolean(parts[2]);
+		        try { autoFarmRadius = Integer.parseInt(parts[3]); } catch (NumberFormatException e) { autoFarmRadius = 0; }
+		    }
+		    // Extended format: mode, spoilId, sweepId, healer slots
+		    if (parts.length >= 5) _autoFarmMode = parts[4];
+		    if (parts.length >= 6) { try { _autoFarmSpoilSkillId = Integer.parseInt(parts[5]); } catch (NumberFormatException e) {} }
+		    if (parts.length >= 7) { try { _autoFarmSweepSkillId = Integer.parseInt(parts[6]); } catch (NumberFormatException e) {} }
+		    if (parts.length >= 8) {
+		        String[] healerEntries = parts[7].split("\\|");
+		        String[] slots = {"heal1","heal2","heal3","heal4"};
+		        for (int i = 0; i < slots.length && i < healerEntries.length; i++) {
+		            String[] kv = healerEntries[i].split(":");
+		            if (kv.length == 2) {
+		                try {
+		                    int sid = Integer.parseInt(kv[0]);
+		                    int thr = Integer.parseInt(kv[1]);
+		                    if (sid > 0) _healerSkills.put(slots[i], sid);
+		                    _healerHpThresholds.put(slots[i], thr);
+		                } catch (NumberFormatException e) {}
+		            }
 		        }
 		    }
 		}
