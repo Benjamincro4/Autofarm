@@ -405,7 +405,7 @@ public class AutoFarmConfig
 		final StringBuilder sb = new StringBuilder(assist != null ? assist.getName() : "Not Set");
 		if (assist != null) sb.append(";Not Set");
 
-		for (final L2PcInstance member : party.getPartyMembers())
+		for (final L2PcInstance member : party.getMembers())
 		{
 			if (member == player) continue;
 			if (assist != null && member == assist) continue;

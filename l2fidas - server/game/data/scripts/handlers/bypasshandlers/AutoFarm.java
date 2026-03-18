@@ -194,7 +194,7 @@ public class AutoFarm implements IBypassHandler
 						if (target2 != null && target2 != activeChar)
 						{
 							final L2Party party = activeChar.getParty();
-							if (party != null && party.getPartyMembers().contains(target2))
+							if (party != null && party.getMembers().contains(target2))
 							{
 								cfg.setAssistId(target2.getObjectId(), activeChar);
 								activeChar.sendMessage("[AutoFarm] Party Target → " + target2.getName());
