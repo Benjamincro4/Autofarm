@@ -1,0 +1,23 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Cloacks -->
+<!-- Created with Notepad :D -->
+<!-- © 2011 by NeverMore -->
+
+<list maintainEnchantment="true">
+
+  <!-- Holy Spirit's Cloak - Heavy Armor exclusive -->
+  <item id="2">
+    <ingredient id="5575" count="5000"/>
+    <production id="13890" count="1"/>
+  </item>
+
+
+  <!-- Ancient Cloak - Heavy Armor exclusive -->
+  <item id="7">
+    <ingredient id="5575" count="5000"/>
+    <production id="14609" count="1"/>
+  </item>
+
+
+</list>

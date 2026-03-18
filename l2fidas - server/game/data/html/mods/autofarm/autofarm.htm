@@ -1,0 +1,79 @@
+<html>
+<body>
+  <center>
+    <tr>
+      <td align="center" valign="top">Currently Auto Farm is <font color="FF6600">%auto_farm_status%</font></td>
+    </tr>
+    <br>
+    <button value="Enable" action="bypass -h voice .enableautofarm" width=75 height=25 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+    <button value="Disable" action="bypass -h voice .disableautofarm" width=75 height=25 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+    <br><br>
+  </center>
+
+  <br><br>
+
+  <!-- Checkboxes -->
+  <table width="250" align="center">
+    <tr>
+      <td align="left">
+        <button value=" " action="bypass -h voice .toggleassist" width=16 height=16 back="%assist_check%" fore="%assist_check%"> 
+      </td>
+      <td>Assist to Party Leader</td>
+    </tr>
+    <tr>
+      <td align="left">
+        <button value=" " action="bypass -h voice .togglerandomskills" width=16 height=16 back="%random_skills_check%" fore="%random_skills_check%"> 
+      </td>
+      <td>Use Random Skills</td>
+    </tr>
+    <tr>
+      <td align="left">
+        <button value=" " action="bypass -h voice .togglekeeplocation" width=16 height=16 back="%keep_location_check%" fore="%keep_location_check%"> 
+      </td>
+      <td>Keep Starting Farm Location</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- Search Distance -->
+  <table width="250" align="center">
+    <tr>
+      <td align="left">Search Distance:</td>
+      <td align="center">
+        <edit var="farm_distance" width=50 value="%farm_radius%">
+      </td>
+      <td align="right">
+        <button value="Edit" action="bypass -h voice .setdistance $farm_distance" width=50 height=25 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+      </td>  
+    </tr>
+  </table>
+
+  <br><br>
+
+  <!-- Quick Skill Bar (Bar 10) -->
+  <center>
+    <font color="LEVEL">Quick Skill Bar (Bar 10)</font>
+   <table>
+    <tr>
+        <!-- Cuadro 1 -->
+        <td align="center">
+           <button action="bypass -h voice .selectskill slot1" width=32 height=32 back="%slot1_icon%" fore="%slot1_icon%">
+        </td>
+        <!-- Cuadro 2 -->
+        <td align="center">
+            <button action="bypass -h voice .selectskill slot2" width=32 height=32 back="%slot2_icon%" fore="%slot2_icon%">
+        </td>
+        <!-- Cuadro 3 -->
+        <td align="center">
+            <button action="bypass -h voice .selectskill slot3" width=32 height=32 back="%slot3_icon%" fore="%slot3_icon%">
+        </td>
+        <!-- Cuadro 4 -->
+        <td align="center">
+            <button action="bypass -h voice .selectskill slot4" width=32 height=32 back="%slot4_icon%" fore="%slot4_icon%">
+		</td>
+    </tr>
+</table>
+  </center>
+</body>
+</html>

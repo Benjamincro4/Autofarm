@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+  <armor id="57301" name="Кираса Аида">
+    <set name="crystal_count" value="3214"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t701_u_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="7520"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="268"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57302" name="Набедренники Аида">
+    <set name="crystal_count" value="2009"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t701_l_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="3170"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="167"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57303" name="Рукавицы Аида">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t701_g_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="510"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57304" name="Сапоги Аида">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t701_b_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1070"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57305" name="Шлем Аида">
+    <set name="crystal_count" value="1205"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="240"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="109"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  
+  <armor id="57306" name="Кожаная Кираса Аида">
+    <set name="crystal_count" value="2410"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t702_u_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="4140"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="200"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57307" name="Кожаные Брюки Аида">
+    <set name="crystal_count" value="1506"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t702_l_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1320"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="126"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57308" name="Кожаные Перчатки Аида">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t702_g_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="510"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57309" name="Кожаные Сапоги Аида">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t702_b_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1070"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57310" name="Кожаный Шлем Аида">
+    <set name="crystal_count" value="1205"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="480"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="109"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  
+  <armor id="57311" name="Туника Аида">
+    <set name="crystal_count" value="2410"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t703_u_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="1750"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="134"/>
+      <add stat="maxMp" order="0x10" value="655"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57312" name="Штаны Аида">
+    <set name="crystal_count" value="1506"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t703_l_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="850"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="84"/>
+      <add stat="maxMp" order="0x10" value="433"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57313" name="Перчатки Аида">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t703_g_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="510"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57314" name="Ботинки Аида">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.armor_t703_b_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1070"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57315" name="Диадема Аида">
+    <set name="crystal_count" value="1205"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_circlet_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="570"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="109"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+
+  <armor id="57319" name="Плащ Аида - Мага">
+    <set name="crystal_count" value="0"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="crystallizable" value="false"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.Icon.br_frintessa_cloak_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="220"/>
+    <equip>
+      <slot id="BACK"/>
+    </equip>
+    <for>
+    </for>
+  </armor>
+  
+  <armor id="57322" name="Колпак Аида - Воина">
+    <set name="crystal_count" value="0"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="crystallizable" value="false"/>
+    <set name="icon" value="Mysterious_Valakas_Arm.icon.frintessa_hair_accessary"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR2"/>
+    </equip>
+    <for>
+    </for>
+  </armor>
+</list>

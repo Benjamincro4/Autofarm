@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Quest -->
+
+<list maintainEnchantment="true">
+  <!-- Frintezza's Magic Force Field Removal Scroll -->
+  <item id="1">
+    <production id="8073" count="1"/>     
+	  <ingredient id="22608" count="15"/>
+  </item>
+
+  <!-- Blooded Fabric -->
+  <item id="1">
+    <production id="4295" count="1"/>     
+	  <ingredient id="22608" count="15"/>
+  </item>
+
+  <!-- Floating Stone -->
+  <item id="1">
+    <production id="7267" count="1"/>     
+	  <ingredient id="22608" count="15"/>
+  </item>
+ 
+  <!-- Portal Stone -->
+  <item id="1">
+    <production id="3865" count="1"/>     
+	  <ingredient id="22608" count="15"/>
+  </item>
+
+</list>

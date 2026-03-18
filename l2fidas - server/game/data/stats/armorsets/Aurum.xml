@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/armorSets.xsd">
+	<!-- Aurum Armor Sets -->
+	<set id="722">
+		<chest id="35000" /> <!-- Aurum Breastplate -->
+		<legs id="35001" /> <!-- Aurum Gaiter -->
+		<head id="35004" /> <!-- Aurum Helmet -->
+		<gloves id="35002" /> <!-- Aurum Gauntlet -->
+		<feet id="35003" /> <!-- Aurum Boots -->
+		<shield id="15587" /> <!-- Elegia Shield -->
+		<skill id="3006" level="1" /> <!-- Equip Set Items -->
+		<skill id="61110" level="1" /> <!-- Aurum Heavy Armor Set -->
+		<shield_skill id="8496" level="1" /> <!-- Elegia Shield -->
+		<enchant6skill id="8461" level="1" /> <!-- Enchant Heavy Armor (S Grade) -->
+		<str val="3" />
+		<con val="-2" />
+	</set>
+	<set id="723">
+		<chest id="35005" /> <!-- Aurum Leather Breastplate -->
+		<legs id="35006" /> <!-- Aurum Leather Legging -->
+		<head id="35009" /> <!-- Aurum Leather Helmet -->
+		<gloves id="35007" /> <!-- Aurum Leather Gloves -->
+		<feet id="35008" /> <!-- Aurum Leather Boots -->
+		<skill id="3006" level="1" /> <!-- Equip Set Items -->
+		<skill id="61111" level="1" /> <!-- Aurum Leather Armor Set -->
+		<enchant6skill id="8462" level="1" /> <!-- Enchant Light Armor (S Grade) -->
+		<str val="1" />
+		<con val="-2" />
+		<dex val="2" />
+	</set>
+	<set id="724">
+		<chest id="35010" /> <!-- Aurum Tunic -->
+		<legs id="35011" /> <!-- Aurum Stockings -->
+		<head id="35014" /> <!-- Aurum Circlet -->
+		<gloves id="35012" /> <!-- Aurum Gloves -->
+		<feet id="35013" /> <!-- Aurum Shoes -->
+		<skill id="3006" level="1" /> <!-- Equip Set Items -->
+		<skill id="61112" level="1" /> <!-- Aurum Robe Set -->
+		<enchant6skill id="8463" level="1" /> <!-- Enchant Robe (S Grade) -->
+		<int val="1" />
+		<men val="-2" />
+		<wit val="2" />
+	</set>
+	
+		<!-- Aurum PVP Armor Sets -->
+	<set id="725">
+		<chest id="35015" /> <!-- Aurum Breastplate {PvP} -->
+		<legs id="35001" /> <!-- Aurum Gaiter -->
+		<head id="35004" /> <!-- Aurum Helmet -->
+		<gloves id="35002" /> <!-- Aurum Gauntlet -->
+		<feet id="35003" /> <!-- Aurum Boots -->
+		<shield id="15587" /> <!-- Elegia Shield -->
+		<skill id="3006" level="1" /> <!-- Equip Set Items -->
+		<skill id="61110" level="1" /> <!-- Aurum Heavy Armor Set - PVP -->
+		<skill id="3659" level="1" /> <!-- Aurum Heavy Armor Set - PVP -->
+		<skill id="3662" level="1" /> <!-- Aurum Heavy Armor Set - PVP -->
+		<shield_skill id="8496" level="1" /> <!-- Elegia Shield -->
+		<enchant6skill id="8461" level="1" /> <!-- Enchant Heavy Armor (S Grade) -->
+		<str val="3" />
+		<con val="-2" />
+	</set>
+	<set id="726">
+		<chest id="35016" /> <!-- Aurum Leather Breastplate {PvP} -->
+		<legs id="35006" /> <!-- Aurum Leather Legging -->
+		<head id="35009" /> <!-- Aurum Leather Helmet -->
+		<gloves id="35007" /> <!-- Aurum Leather Gloves -->
+		<feet id="35008" /> <!-- Aurum Leather Boots -->
+		<skill id="3006" level="1" /> <!-- Equip Set Items -->
+		<skill id="61111" level="1" /> <!-- Aurum Leather Armor Set - PVP -->
+		<skill id="3663" level="1" /> <!-- Aurum Leather Armor Set - PVP -->
+		<enchant6skill id="8462" level="1" /> <!-- Enchant Light Armor (S Grade) -->
+		<str val="1" />
+		<con val="-2" />
+		<dex val="2" />
+	</set>
+	<set id="727">
+		<chest id="35017" /> <!-- Aurum Tunic {PvP} -->
+		<legs id="35011" /> <!-- Aurum Stockings -->
+		<head id="35014" /> <!-- Aurum Circlet -->
+		<gloves id="35012" /> <!-- Aurum Gloves -->
+		<feet id="35013" /> <!-- Aurum Shoes -->
+		<skill id="3006" level="1" /> <!-- Equip Set Items -->
+		<skill id="61112" level="1" /> <!-- Aurum Robe Set - PVP -->
+		<skill id="3660" level="1" /> <!-- Aurum Robe Set - PVP -->
+		<enchant6skill id="8463" level="1" /> <!-- Enchant Robe (S Grade) -->
+		<int val="1" />
+		<men val="-2" />
+		<wit val="2" />
+	</set>
+	
+
+
+</list>

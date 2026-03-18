@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?><!-- Клан Развитие -->
+<list>
+<item id="1"><ingredient id="57" count="5000000"/><production id="1419" count="1"/></item><!-- До 3 Левл -->
+<item id="2"><ingredient id="6673" count="140"/><ingredient id="57" count="90000000"/><production id="3874" count="1"/></item><!-- До 4 Левл -->
+<item id="3"><ingredient id="6673" count="300"/><ingredient id="57" count="150000000"/><production id="3870" count="1"/></item><!-- До 5 Левл -->
+<item id="4"><ingredient id="6673" count="1800"/><ingredient id="57" count="1000000000"/><production id="9910" count="1"/></item><!-- До 9 Левл -->
+<item id="5"><ingredient id="6673" count="3000"/><ingredient id="57" count="2000000000"/><production id="9911" count="1"/></item><!-- До 10 Левл -->
+<item id="6"><ingredient id="6673" count="15"/><production id="8767" count="100"/></item><!-- Коготь Тира для Репутации Клана -->
+</list>

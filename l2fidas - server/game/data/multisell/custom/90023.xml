@@ -1,0 +1,206 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Created with Lineage II - Multisell Manager -->
+<!-- ©2011 by NeverMore -->
+
+<list maintainEnchantment="true">
+
+  <!-- Spirit Ore -->
+  <item id="1">
+    <ingredient id="57" count="500"/>
+    <production id="3031" count="1"/>
+  </item>
+
+  <!-- Soul Ore -->
+  <item id="2">
+    <ingredient id="57" count="300"/>
+    <production id="1785" count="1"/>
+  </item>
+
+  <!-- Battle Symbol -->
+  <item id="3">
+    <ingredient id="57" count="30000"/>
+    <production id="8875" count="1"/>
+  </item>
+
+  <!-- Magic Symbol -->
+  <item id="4">
+    <ingredient id="57" count="30000"/>
+    <production id="8876" count="1"/>
+  </item>
+
+  <!-- Phoenix Blood -->
+  <item id="5">
+    <ingredient id="57" count="30000"/>
+    <production id="8873" count="1"/>
+  </item>
+
+  <!-- Einhasad's Holy Water -->
+  <item id="6">
+    <ingredient id="57" count="30000"/>
+    <production id="8874" count="1"/>
+  </item>
+
+  <!-- Cursed Bone -->
+  <item id="7">
+    <ingredient id="57" count="360"/>
+    <production id="2508" count="1"/>
+  </item>
+
+  <!-- Silver Arrow -->
+  <item id="10">
+    <ingredient id="57" count="8"/>
+    <production id="1343" count="1"/>
+  </item>
+
+  <!-- Mithril Arrow -->
+  <item id="11">
+    <ingredient id="57" count="9"/>
+    <production id="1344" count="1"/>
+  </item>
+
+  <!-- Shining Arrow -->
+  <item id="12">
+    <ingredient id="57" count="20"/>
+    <production id="1345" count="1"/>
+  </item>
+
+   <!-- Silver bolt -->
+  <item id="10">
+    <ingredient id="57" count="8"/>
+    <production id="9635" count="1"/>
+  </item>
+
+  <!-- Mithril bolt -->
+  <item id="11">
+    <ingredient id="57" count="9"/>
+    <production id="9636" count="1"/>
+  </item>
+
+  <!-- Shining bolt -->
+  <item id="12">
+    <ingredient id="57" count="20"/>
+    <production id="9637" count="1"/>
+  </item>
+
+  <!-- Energy Stone -->
+  <item id="19">
+    <ingredient id="57" count="120"/>
+    <production id="5589" count="1"/>
+  </item>
+
+  <!-- Crystal: A-Grade -->
+  <item id="21">
+    <ingredient id="57" count="30000"/>
+    <production id="1461" count="1"/>
+  </item>
+
+  <!-- Crystal: B-Grade -->
+  <item id="22">
+    <ingredient id="57" count="18000"/>
+    <production id="1460" count="1"/>
+  </item>
+
+  <!-- Crystal: C-Grade -->
+  <item id="23">
+    <ingredient id="57" count="6000"/>
+    <production id="1459" count="1"/>
+  </item>
+
+  <!-- Crystal: D-Grade -->
+  <item id="24">
+    <ingredient id="57" count="2500"/>
+    <production id="1458" count="1"/>
+  </item>
+
+ <!-- Mana Potion -->
+  <item id="46">
+    <ingredient id="57" count="1500"/>
+    <production id="728" count="1"/>
+  </item>
+
+  <!-- Greater Healing Potion -->
+  <item id="47">
+    <ingredient id="57" count="1000"/>
+    <production id="1539" count="1"/>
+  </item>
+
+ <!-- Dualsword Craft Stamp -->
+ <item id="47">
+   <ingredient id="57" count="40000000"/>
+   <production id="5126" count="1"/>
+  </item>
+
+<!-- Summoning Crystal -->
+ <item id="48">
+   <ingredient id="57" count="40000"/>
+   <production id="8615" count="1"/>
+  </item>
+
+<!-- Recovery A -->
+ <item id="49">
+   <ingredient id="57" count="53000"/>
+   <production id="8598" count="1"/>
+  </item>
+
+<!-- Recovery S -->
+ <item id="50">
+   <ingredient id="57" count="90000"/>
+   <production id="8599" count="1"/>
+  </item>
+
+<!-- Scroll of Escape: Clan Hall -->
+ <item id="51">
+   <ingredient id="57" count="600"/>
+   <production id="1829" count="1"/>
+  </item>
+
+<!-- Scroll of Escape: Castle -->
+ <item id="52">
+   <ingredient id="57" count="600"/>
+   <production id="1830" count="1"/>
+  </item>
+
+<!-- Scroll of Escape -->
+ <item id="53">
+   <ingredient id="57" count="500"/>
+   <production id="736" count="1"/>
+  </item>
+
+  <!-- Scroll of Resurrection -->
+ <item id="53">
+   <ingredient id="57" count="2500"/>
+   <production id="737" count="1"/>
+  </item>
+
+<!-- Blessed Scroll of Resurrection for Pets -->
+<item id="28">
+  <ingredient id="57" count="10000"/>
+  <production id="6387" count="1"/>
+</item>
+
+<!-- Deluxe Food for Strider -->
+<item id="26">
+  <ingredient id="57" count="600"/>
+  <production id="5169" count="1"/>
+</item>
+
+<!-- Great Wolf Food -->
+<item id="24">
+  <ingredient id="57" count="2000"/>
+  <production id="9668" count="1"/>
+</item>
+
+<!-- Gemstone C -->
+ <item id="52">
+   <ingredient id="57" count="3500"/>
+   <production id="2131" count="1"/>
+  </item>
+
+<!-- Gemstone B -->
+ <item id="53">
+   <ingredient id="57" count="11000"/>
+   <production id="2132" count="1"/>
+  </item>
+
+</list>

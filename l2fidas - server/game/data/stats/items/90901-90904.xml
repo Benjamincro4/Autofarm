@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+
+<item id="90901" type="Armor" name="Seraph Helmet">
+	<!-- Description: Helmet of a brave ancient warrior. Uses 2 hair accessory slot(s). -->
+	<set name="icon" val="Dods_Helmets.Seraph_helmet" />
+	<set name="default_action" val="equip" />
+	<set name="bodypart" val="hairall" />
+	<set name="material" val="wood" />
+	<set name="weight" val="10" />
+	<set name="price" val="28671000" />
+	<set name="is_tradable" val="true" />
+	<set name="is_dropable" val="true" />
+	<set name="is_sellable" val="true" />
+</item>
+
+<item id="90902" type="Armor" name="Immortal Helmet">
+	<!-- Description: Helmet of a brave ancient warrior. Uses 2 hair accessory slot(s). -->
+	<set name="icon" val="Dods_Helmets.Immortal_helmet" />
+	<set name="default_action" val="equip" />
+	<set name="bodypart" val="hairall" />
+	<set name="material" val="wood" />
+	<set name="weight" val="10" />
+	<set name="price" val="28671000" />
+	<set name="is_tradable" val="true" />
+	<set name="is_dropable" val="true" />
+	<set name="is_sellable" val="true" />
+</item>
+
+<item id="90903" type="Armor" name="Eternal Helmet">
+	<!-- Description: Helmet of a brave ancient warrior. Uses 2 hair accessory slot(s). -->
+	<set name="icon" val="Dods_Helmets.Eternal_helmet" />
+	<set name="default_action" val="equip" />
+	<set name="bodypart" val="hairall" />
+	<set name="material" val="wood" />
+	<set name="weight" val="10" />
+	<set name="price" val="28671000" />
+	<set name="is_tradable" val="true" />
+	<set name="is_dropable" val="true" />
+	<set name="is_sellable" val="true" />
+</item>
+
+<item id="90904" type="Armor" name="Twillight Helmet">
+	<!-- Description: Helmet of a brave ancient warrior. Uses 2 hair accessory slot(s). -->
+	<set name="icon" val="Dods_Helmets.Twilight_helmet" />
+	<set name="default_action" val="equip" />
+	<set name="bodypart" val="hairall" />
+	<set name="material" val="wood" />
+	<set name="weight" val="10" />
+	<set name="price" val="28671000" />
+	<set name="is_tradable" val="true" />
+	<set name="is_dropable" val="true" />
+	<set name="is_sellable" val="true" />
+</item>
+</list>

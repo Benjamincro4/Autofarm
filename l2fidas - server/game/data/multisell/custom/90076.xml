@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Pets -->
+
+<list maintainEnchantment="true">
+  <!-- Dragonflute of Wind -->
+  <item id="1">
+    <production id="4422" count="1"/>     
+	  <ingredient id="22600" count="3"/>
+  </item>
+
+  <!-- Dragon Bugle of Star -->
+  <item id="2">
+    <production id="4423" count="1"/>     
+	  <ingredient id="22600" count="3"/>
+  </item>
+
+  <!-- Dragon Bugle of Twilight -->
+  <item id="3">
+    <production id="4424" count="1"/>     
+	  <ingredient id="22600" count="3"/>
+  </item>
+
+  <!-- Fenrir -->
+  <item id="5">
+    <production id="10426" count="1"/>     
+	  <ingredient id="22600" count="4"/>
+  </item>
+
+  <!-- Mounting Bracelet -->
+  <item id="6">
+    <ingredient id="22600" count="5"/>
+    <production id="20396" count="1"/>
+  </item>
+
+  <!-- Mounting Bracelet -->
+  <item id="7">
+    <ingredient id="22600" count="5"/>
+    <production id="20029" count="1"/>
+  </item>
+
+  <!-- Mounting Bracelet -->
+  <item id="8">
+    <ingredient id="22600" count="5"/>
+    <production id="20502" count="1"/>
+  </item>
+
+  <!-- Mounting Bracelet -->
+  <item id="9">
+    <ingredient id="22600" count="5"/>
+    <production id="21088" count="1"/>
+  </item>
+
+  <!-- Mounting Bracelet -->
+  <item id="9">
+    <ingredient id="22600" count="5"/>
+    <production id="22193" count="1"/>
+  </item>
+
+</list>

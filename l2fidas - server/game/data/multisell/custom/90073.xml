@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Pets -->
+
+<list maintainEnchantment="true">  
+  <!-- VIP+ 7 dias -->
+  <item id="5">
+    <production id="22601" count="1"/>     
+	  <ingredient id="22600" count="5"/>
+  </item>
+
+  <!-- VIP+ 30 dias -->
+  <item id="6">
+    <production id="22602" count="1"/>     
+	  <ingredient id="22600" count="15"/>
+  </item>
+
+  <!-- VIP 7 dias -->
+  <item id="1">
+    <production id="22603" count="1"/>     
+	  <ingredient id="22600" count="3"/>
+  </item>
+
+  <!-- VIP 30 dias -->
+  <item id="4">
+    <production id="22604" count="1"/>     
+	  <ingredient id="22600" count="10"/>
+  </item>
+
+</list>

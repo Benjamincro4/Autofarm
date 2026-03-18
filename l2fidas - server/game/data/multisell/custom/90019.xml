@@ -1,0 +1,53 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Created with Lineage II - Multisell Manager -->
+<!-- © 2011 by NeverMore -->
+
+<list maintainEnchantment="true">
+
+
+
+
+
+
+  <!-- Scroll: Enchant Weapon (B) -->
+  <item id="17">
+    <ingredient id="57" count="3000000"/>
+    <production id="947" count="1"/>
+  </item>
+
+  <!-- Scroll: Enchant Armor (B) -->
+  <item id="18">
+    <ingredient id="57" count="1500000"/>
+    <production id="948" count="1"/>
+  </item>
+
+
+  <!-- Scroll: Enchant Weapon (C) -->
+  <item id="21">
+    <ingredient id="57" count="1000000"/>
+    <production id="951" count="1"/>
+  </item>
+
+  <!-- Scroll: Enchant Armor (C) -->
+  <item id="22">
+    <ingredient id="57" count="500000"/>
+    <production id="952" count="1"/>
+  </item>
+
+
+  <!-- Scroll: Enchant Weapon (D) -->
+  <item id="25">
+    <ingredient id="57" count="200000"/>
+    <production id="955" count="1"/>
+  </item>
+
+  <!-- Scroll: Enchant Armor (D) -->
+  <item id="26">
+    <ingredient id="57" count="100000"/>
+    <production id="956" count="1"/>
+  </item>
+
+
+
+</list>

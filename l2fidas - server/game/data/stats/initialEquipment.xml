@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/initialEquipment.xsd">
+	<!-- Human Fighter -->
+	<equipment classId="0">
+		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
+		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
+	</equipment>
+	<!-- Human Mystic -->
+	<equipment classId="10">
+		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
+		<item id="20638" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
+	</equipment>
+	<!-- Elven Fighter -->
+	<equipment classId="18">
+		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
+		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
+	</equipment>
+	<!-- Elven Mystic -->
+	<equipment classId="25">
+		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
+		<item id="20638" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
+	</equipment>
+	<!-- Dark Fighter -->
+	<equipment classId="31">
+		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
+		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
+	</equipment>
+	<!-- Dark Mystic -->
+	<equipment classId="38">
+		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
+		<item id="20638" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
+	</equipment>
+	<!-- Orc Fighter -->
+	<equipment classId="44">
+		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
+		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
+	</equipment>
+	<!-- Orc Mystic -->
+	<!-- NOTE: This is orc_mage (orc_shaman is retail typo) -->
+	<equipment classId="49">
+		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
+		<item id="20638" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
+	</equipment>
+	<!-- Dwarf Fighter -->
+	<equipment classId="53">
+		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
+		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
+	</equipment>
+	<!-- Male Kamael Soldier -->
+	<equipment classId="123">
+		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
+		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
+	</equipment>
+	<!-- Female Kamael Soldier -->
+	<equipment classId="124">
+		<item id="10650" count="5" /> <!-- Adventurer's Scroll of Escape -->
+		<item id="20635" count="1" /> <!-- No Grade Beginner's Adventurer Support Pack -->
+	</equipment>
+</list>

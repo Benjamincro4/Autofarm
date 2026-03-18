@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Gracia_GameServer" default="dist" basedir=".">
+
+	<property name="src" location="src" />
+	<property name="lib" location="lib" />
+	<property name="gameServer" location="l2fidas - server/game" />
+	<property name="loginServer" location="l2fidas - server/login" />
+	<property name="build" location="build" />
+	<property name="bat.start" value="l2fidas - server/startServer.bat"/>
+	<property name="bat.stop" value="l2fidas - server/stopServer.bat"/>
+
+	<target name="dist" depends="jar">
+		<copy todir="login/libs">
+			<fileset dir="${src}/../lib">
+			<include name="c3p0-0.9.2-pre5.jar" />
+			<include name="ecj-4.4.jar" />
+			<include name="java-engine-1.8.jar" />
+			<include name="javolution-5.5.1.jar" />
+			<include name="jna.jar" />
+			<include name="jython-engine-2.2.1.jar" />
+			<include name="jython.jar" />
+			<include name="mail.jar" />
+			<include name="mailapi.jar" />
+			<include name="mchange-commons-java-0.2.3.jar" />
+			<include name="mmocore.jar" />
+			<include name="mysql-connector-java-5.1.22-bin.jar" />
+			<include name="netcon-1.7.jar" />
+			<include name="smtp.jar" />
+			<include name="Subnet.jar" />
+			<include name="trove-3.0.3.jar" />
+			</fileset>
+		</copy>
+		<copy todir="game/libs">
+			<fileset dir="${src}/../lib">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<copy todir="login">
+			<fileset dir="dist">
+				<include name="startAccountManager.*" />
+				<include name="startSQLAccountManager.*" />
+				<include name="LoginServer_loop.sh" />
+				<include name="startLoginServer.*" />
+				<include name="RegisterGameServer.*" />
+			</fileset>
+		</copy>
+		<copy todir="game">
+			<fileset dir="dist">
+				<include name="GameServer_loop.sh" />
+				<include name="startGameServer.*" />
+				<include name="GeoDataConverter.*" />
+			</fileset>
+		</copy>
+		<fixcrlf srcdir="game" eol="lf" eof="remove" includes="**/*.sh" />
+		<fixcrlf srcdir="login" eol="lf" eof="remove" includes="**/*.sh" />
+		<fixcrlf srcdir="game" eol="crlf" eof="remove" includes="**/*.bat" />
+		<fixcrlf srcdir="login" eol="crlf" eof="remove" includes="**/*.bat" />
+		<mkdir dir="game/log" />
+		<mkdir dir="login/log" />
+		<mkdir dir="game/config" />
+		<mkdir dir="login/config" />
+		<copy todir="game/config">
+			<fileset dir="config">
+				<include name="*.properties" />
+				<exclude name="banned_ips.properties" />
+				<exclude name="loginserver.properties" />
+			</fileset>
+		</copy>
+		<copy todir="login/config">
+			<fileset dir="config">
+				<include name="banned_ips.properties" />
+				<include name="logging.properties" />
+				<include name="loginserver.properties" />
+			</fileset>
+		</copy>
+		<mkdir dir="game/data" />
+	</target>
+
+	<target name="jar" depends="compile" description="Create the jar file.">
+		<exec executable="${bat.stop}" />
+		
+		<jar destfile="${build}/l2jserver.jar">
+			<fileset dir="classes" />
+			<manifest>
+				<attribute name="Main-Class" value="net.sf.l2j.Server" />
+				<attribute name="Class-Path" value="${manifest.libs}" />
+			</manifest>
+		</jar>
+
+		<copy todir="login/libs">
+			<fileset dir="${build}">
+				<include name="l2jserver.jar" />
+			</fileset>
+		</copy>
+
+		<copy todir="game/libs">
+			<fileset dir="${build}">
+				<include name="l2jserver.jar" />
+			</fileset>
+		</copy>
+		
+		<copy todir="${gameServer}">
+			<fileset dir="${build}">
+				<include name="l2jserver.jar" />
+			</fileset>
+		</copy>
+		
+		<copy todir="${loginServer}">
+			<fileset dir="${build}">
+				<include name="l2jserver.jar" />
+			</fileset>
+		</copy>
+		
+		<exec executable="${bat.start}" />
+	</target>
+
+	<target name="compile" depends="init" description="Compile the source.">
+		<javac srcdir="${src}" classpathref="classpath" destdir="classes" compiler="modern" debug="true" debuglevel="lines,vars,source" includeantruntime="false" source="8" target="8" encoding="UTF-8" />
+	</target>
+	
+	<target name="init" depends="clean,checkRequirements" description="Create the output directories.">
+		<mkdir dir="${build}" />
+	</target>
+
+	<target name="clean" description="Remove the output directories.">
+		<delete dir="${build}" />
+	</target>
+
+	<target name="checkRequirements" description="Check requirements.">
+		<available classname="java.util.stream.Stream" property="JDK8.present" />
+		<fail unless="JDK8.present" message="Java 8 is required, but your version is Java ${ant.java.version}. Install latest JDK." />
+	</target>
+	
+	<path id="classpath">
+		<fileset dir="${lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<pathconvert property="manifest.libs" pathsep=" ">
+		<path refid="classpath" />
+		<mapper>
+			<chainedmapper>
+				<flattenmapper />
+				<globmapper from="*.jar" to="../libs/*.jar" />
+			</chainedmapper>
+		</mapper>
+	</pathconvert>
+	
+</project>

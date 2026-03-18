@@ -1,0 +1,7 @@
+﻿<?xml version='1.0' encoding='utf-8'?><!-- Книги -->
+<list>
+<item id="1"><ingredient id="6622" count="10"/><production id="9627" count="1"/></item><!-- Кодекс Мастер -->
+<item id="2"><ingredient id="6673" count="10"/><production id="6622" count="1"/></item><!-- Простой Кодекс -->
+<item id="3"><ingredient id="6673" count="10"/><production id="9625" count="1"/></item><!-- Кодекс Забвения -->
+<item id="4"><ingredient id="6673" count="10"/><production id="9626" count="1"/></item><!-- Кодекс Дисциплина -->
+</list>

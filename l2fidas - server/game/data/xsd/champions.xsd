@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="list">
+       <xs:complexType>
+           <xs:sequence>
+               <xs:element name="champion" minOccurs="0" maxOccurs="unbounded">
+                   <xs:complexType>
+                       <xs:sequence>
+                           <xs:element name="chance" minOccurs="1" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                       <xs:maxInclusive value="100" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="minLvl" type="xs:positiveInteger" minOccurs="0" maxOccurs="1" />
+                           <xs:element name="maxLvl" type="xs:positiveInteger" minOccurs="0" maxOccurs="1" />
+                           <xs:element name="title" type="xs:string" minOccurs="0" maxOccurs="1" />
+                           <xs:element name="glow" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:positiveInteger">
+                                       <xs:maxInclusive value="2" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="bonusExp" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="bonusSp" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="bonusDrop" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="bonusDropAdena" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="reward" minOccurs="0" maxOccurs="unbounded">
+                               <xs:complexType>
+                                   <xs:attribute name="id" type="xs:positiveInteger" use="required" />
+                                   <xs:attribute name="min" type="xs:positiveInteger" use="required" />
+                                   <xs:attribute name="max" type="xs:positiveInteger" use="required" />
+                               </xs:complexType>
+                           </xs:element>
+                           <xs:element name="maxHp" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="regHp" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="maxMp" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="regMp" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="pAtk" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="pAtkSpd" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="mAtk" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="mAtkSpd" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="pDef" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="mDef" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="moveSpd" minOccurs="0" maxOccurs="1">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:float">
+                                       <xs:minExclusive value="0" />
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                       </xs:sequence>
+                   </xs:complexType>
+               </xs:element>
+           </xs:sequence>
+       </xs:complexType>
+   </xs:element>
+</xs:schema>

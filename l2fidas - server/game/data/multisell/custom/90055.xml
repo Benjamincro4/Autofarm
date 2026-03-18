@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Belts -->
+
+<list maintainEnchantment="true">
+	<!-- Low-grade Magic Ornament Mithril Belt -->
+	<item id="61">
+		<ingredient id="57" count="10" />
+		<production id="14950" count="1" />
+	</item>
+	<!-- Ordinary Magic Ornament Mithril Belt -->
+	<item id="62">
+		<ingredient id="57" count="15" />
+		<production id="14951" count="1" />
+	</item>
+	<!-- High-grade Magic Ornament Mithril Belt -->
+	<item id="63">
+		<ingredient id="57" count="20" />
+		<production id="14952" count="1" />
+	</item>
+	<!-- Top-grade Magic Ornament Mithril Belt -->
+	<item id="64">
+		<ingredient id="57" count="25" />
+		<production id="14953" count="1" />
+	</item>
+	<!-- Low-grade Magic Ornament Mithril Belt -->
+	<item id="65">
+		<ingredient id="57" count="10" />
+		<production id="14954" count="1" />
+	</item>
+	<!-- Ordinary Magic Ornament Mithril Belt -->
+	<item id="66">
+		<ingredient id="57" count="15" />
+		<production id="14955" count="1" />
+	</item>
+	<!-- High-grade Magic Ornament Mithril Belt -->
+	<item id="67">
+		<ingredient id="57" count="20" />
+		<production id="14956" count="1" />
+	</item>
+	<!-- Top-grade Magic Ornament Mithril Belt -->
+	<item id="68">
+		<ingredient id="57" count="25" />
+		<production id="14957" count="1" />
+	</item>
+	<!-- Low-grade Magic Ornament Mithril Belt -->
+	<item id="69">
+		<ingredient id="57" count="10" />
+		<production id="14958" count="1" />
+	</item>
+	<!-- Ordinary Magic Ornament Mithril Belt -->
+	<item id="70">
+		<ingredient id="57" count="15" />
+		<production id="14959" count="1" />
+	</item>
+	<!-- High-grade Magic Ornament Mithril Belt -->
+	<item id="71">
+		<ingredient id="57" count="20" />
+		<production id="14960" count="1" />
+	</item>
+	<!-- Top-grade Magic Ornament Mithril Belt -->
+	<item id="72">
+		<ingredient id="57" count="25" />
+		<production id="14961" count="1" />
+	</item>
+</list>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dressme>
+  <!-- Elegia -->
+  <armorSet id="1001" name="Elegia Heavy (look)" chest="15575" legs="15578" gloves="15581" boots="15584" premium="false" />
+  <armorSet id="1002" name="Elegia Light (look)" chest="15576" legs="15579" gloves="15582" boots="15585" premium="false" />
+  <armorSet id="1003" name="Elegia Robe (look)"  chest="15577" legs="15580" gloves="15583" boots="15586" premium="false" />
+
+  <!-- Aurum -->
+  <armorSet id="1004" name="Aurum Heavy (look)"  chest="35000" legs="35001" gloves="35002" boots="35003" premium="false" />
+  <armorSet id="1005" name="Aurum Light (look)"  chest="35005" legs="35006" gloves="35007" boots="35008" premium="false" />
+  <armorSet id="1006" name="Aurum Robe (look)"   chest="35010" legs="35011" gloves="35012" boots="35013" premium="false" />
+
+  <!-- LionHead (los que has pegado) -->
+  <armorSet id="1007" name="LionHead Heavy (look)" chest="36575" legs="36578" gloves="36581" boots="36584" premium="false" />
+  <armorSet id="1008" name="LionHead Light (look)" chest="36576" legs="36579" gloves="36582" boots="36585" premium="false" />
+  <armorSet id="1009" name="LionHead Robe (look)"  chest="36577" legs="36580" gloves="36583" boots="36586" premium="false" />
+  
+   <!-- Aida -->
+	<armorSet id="1010" name="Aida Heavy (look)" chest="57301" legs="57302" gloves="57303" boots="57304" premium="false" />
+	<armorSet id="1011" name="Aida Light (look)" chest="57306" legs="57307" gloves="57308" boots="57309" premium="false" />
+	<armorSet id="1012" name="Aida Robe (look)"  chest="57311" legs="57312" gloves="57313" boots="57314" premium="false" />
+</dressme>

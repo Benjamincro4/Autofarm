@@ -1,0 +1,37 @@
+<list>
+    <item id="58300" type="Armor" name="Gold Dragon AS">
+        <set name="bodypart" val="chest"/>
+        <set name="armor_type" val="heavy"/>
+        <set name="material" val="steel"/>
+        <set name="crystal_type" val="s84"/>
+        <set name="weight" val="0"/>
+        <set name="price" val="0"/>
+    </item>
+
+    <item id="45651" type="Armor" name="Gold Dragon AS and cloak 1">
+        <set name="bodypart" val="chest"/>
+        <set name="armor_type" val="heavy"/>
+        <set name="material" val="steel"/>
+        <set name="crystal_type" val="s84"/>
+        <set name="weight" val="0"/>
+        <set name="price" val="0"/>
+    </item>
+
+    <item id="45652" type="Armor" name="Gold Dragon AS and cloak 2">
+        <set name="bodypart" val="chest"/>
+        <set name="armor_type" val="heavy"/>
+        <set name="material" val="steel"/>
+        <set name="crystal_type" val="s84"/>
+        <set name="weight" val="0"/>
+        <set name="price" val="0"/>
+    </item>
+
+    <item id="45653" type="Armor" name="Gold Dragon AS and cloak 3">
+        <set name="bodypart" val="chest"/>
+        <set name="armor_type" val="heavy"/>
+        <set name="material" val="steel"/>
+        <set name="crystal_type" val="s84"/>
+        <set name="weight" val="0"/>
+        <set name="price" val="0"/>
+    </item>
+</list>

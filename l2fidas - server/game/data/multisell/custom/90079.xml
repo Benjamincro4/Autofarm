@@ -1,0 +1,23 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Scrolls +% -->
+
+<list maintainEnchantment="true">
+  <!-- 20% EXP -->
+  <item id="1">
+    <production id="22609" count="1"/>     
+	<ingredient id="22608" count="3"/>
+  </item>
+
+  <!-- 15% DROP -->
+  <item id="2">
+    <production id="22610" count="1"/>     
+	<ingredient id="22608" count="3"/>
+  </item>
+
+  <!-- 10% SPOIL -->
+  <item id="3">
+    <production id="22611" count="1"/>     
+	<ingredient id="22608" count="3"/>
+  </item>
+</list>

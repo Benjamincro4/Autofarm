@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Created with Lineage II - Multisell Manager -->
+<!-- © 2011 by NeverMore -->
+
+<list maintainEnchantment="true">
+  <!-- Blessed Scroll: Enchant Armor (B) -->
+  <item id="1">
+    <ingredient id="22607" count="10"/>
+    <production id="6572" count="1"/>
+  </item>
+
+  <!-- Blessed Scroll: Enchant Weapon (B) -->
+  <item id="2">
+    <ingredient id="22607" count="10"/>
+    <production id="6571" count="1"/>
+  </item>
+
+  <!-- Blessed Scroll: Enchant Armor (A) -->
+  <item id="3">
+    <ingredient id="22607" count="15"/>
+    <production id="6570" count="1"/>
+  </item>
+
+  <!-- Blessed Scroll: Enchant Weapon (A) -->
+  <item id="4">
+    <ingredient id="22607" count="15"/>
+    <production id="6569" count="1"/>
+  </item>
+
+  <!-- Blessed Scroll: Enchant Armor (S) -->
+  <item id="5">
+    <ingredient id="22607" count="20"/>
+    <production id="6578" count="1"/>
+  </item>
+
+  <!-- Blessed Scroll: Enchant Weapon (S) -->
+  <item id="6">
+    <ingredient id="22607" count="20"/>
+    <production id="6577" count="1"/>
+  </item>
+</list>

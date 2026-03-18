@@ -1,0 +1,16 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Quest -->
+
+<list maintainEnchantment="true">
+
+     <!-- Noblesse Item -->
+  <item id="1">
+    <ingredient id="16027" count="1"/>
+    <ingredient id="16025" count="1"/>
+    <production id="16026" count="1"/>
+  </item>
+  
+  
+  
+</list>

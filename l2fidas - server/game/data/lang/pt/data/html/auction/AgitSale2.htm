@@ -1,0 +1,27 @@
+<html><body>
+O preço padrão do sistema para este clan hall é<font color="aaccff">%AGIT_LAST_PRICE%</font> adena e o último preço de mercado foi <font color="aaccff">%AGIT_LAST_PRICE%</font> adena.<br>
+O montante recebido no final do leilão é o montante remanescente após a dedução da<font color="LEVEL"> taxa de transação (10%) </font> a partir do preço da compra bem sucedida. Você gostaria de definir o preço padrão das ofertas (preço mínimo de oferta)?
+<table width=270 border=0>
+<tr>
+<td width=220 align=right><edit var=minbid width=230 align=right type=number></td>
+<td width=40 align=right>adena</td>
+</tr>
+</table>
+Por quantos dias você quer que o leilão fique ativo?
+<table width=270 border=0>
+<tr>
+<td width=270 align=right><combobox width=50 var=day list="7;3;1"></td>
+</tr>
+</table>
+Escrever uma explicação sobre o clan hall. <multiedit var="comment" width=270>
+<img src="L2UI.SquareBlank" width=270 height=10>
+<img src="L2UI.SquareWhite" width=270 height=1>
+<img src="L2UI.SquareBlank" width=270 height=5>
+<table width=270 border=0>
+<tr>
+<td width=110></td>
+<td width=80 align=center><button action="%AGIT_LINK_BACK%" value="Voltar" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=80 align=center><button action="bypass -h npc_%objectId%_auction $day $minbid" value="Vender" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td> 
+</tr>
+</table>
+</body></html>

@@ -1,0 +1,31 @@
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/champions.xsd">
+   <champion>
+   <!-- Spawn chance in percents. Sum of chances for all champions shouldn't greater, than 100% -->
+       <chance>0.1</chance>
+       <!-- level bounds -->
+       <minLvl>10</minLvl>
+       <maxLvl>79</maxLvl>
+       <!-- identification -->
+       <title>Mega-Champion</title>
+       <glow>1</glow><!-- 1 - blue or 2 - red -->
+       <!-- rewards multiplier section -->
+       <bonusExp>10</bonusExp>
+       <bonusSp>10</bonusSp>
+       <bonusDrop>10</bonusDrop>
+       <bonusDropAdena>1</bonusDropAdena>
+       <!-- specific reward('s) -->
+       	<!-- <reward id="57" min="1" max="1" />-->
+       <!-- stats multiplier section -->
+       <maxHp>6</maxHp>
+       <regHp>1.5</regHp>
+       <maxMp>1</maxMp>
+       <regMp>1</regMp>
+       <pAtk>2</pAtk>
+       <pAtkSpd>1.4</pAtkSpd>
+       <mAtk>3</mAtk>
+       <mAtkSpd>1.4</mAtkSpd>
+       <pDef>2</pDef>
+       <mDef>2</mDef>
+       <moveSpd>1.5</moveSpd>
+   </champion>
+</list>

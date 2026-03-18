@@ -1,0 +1,10 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1146 (42S02) at line 1: Table 'l2fidas.posts' doesn't exist
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1146 (42S02) at line 1: Table 'l2fidas.clan_introductions' doesn't exist
+ERROR 1146 (42S02) at line 2: Table 'l2fidas.comments' doesn't exist
+ERROR 1146 (42S02) at line 3: Table 'l2fidas.forums' doesn't exist
+ERROR 1146 (42S02) at line 4: Table 'l2fidas.registered_gameservers' doesn't exist
+ERROR 1146 (42S02) at line 5: Table 'l2fidas.posts' doesn't exist
+ERROR 1146 (42S02) at line 6: Table 'l2fidas.topics' doesn't exist
+mysql: [Warning] Using a password on the command line interface can be insecure.

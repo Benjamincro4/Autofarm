@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Created with Lineage II - Multisell Manager -->
+<!-- © 2011 by NeverMore -->
+
+<list maintainEnchantment="true">
+
+  <!-- Coral set -->
+  <item id="1">
+    <ingredient id="57" count="70000"/>
+    <production id="909" count="1"/>
+    <production id="846" count="1"/>
+    <production id="846" count="1"/>
+    <production id="878" count="1"/>
+    <production id="878" count="1"/>
+  </item>
+
+  <!-- Necklace of Wisdom -->
+  <item id="2">
+    <ingredient id="57" count="50000"/>
+    <production id="908" count="1"/>
+    <production id="845" count="1"/>
+    <production id="845" count="1"/>
+    <production id="877" count="1"/>
+    <production id="877" count="1"/>
+  </item>
+</list>

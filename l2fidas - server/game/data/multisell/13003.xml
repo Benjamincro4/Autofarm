@@ -1,0 +1,16 @@
+﻿<?xml version='1.0' encoding='utf-8'?><!-- Банки -->
+<list>
+<item id="1"><ingredient id="57" count="10000000"/><production id="20393" count="100"/></item><!-- Коктейль Синий - Войнам -->
+<item id="2"><ingredient id="57" count="10000000"/><production id="20394" count="100"/></item><!-- Коктейль Красный - Магам -->
+<item id="3"><ingredient id="57" count="100000000"/><production id="1540" count="100"/></item><!-- Быстродействующее Зелье Исцеления -->
+<item id="4"><ingredient id="57" count="25000000"/><production id="728" count="100"/></item><!-- Магическое Зелье (Большое) -->
+<item id="5"><ingredient id="57" count="5000000"/><production id="1539" count="100"/></item><!-- Большое зелье Исцеления -->
+<item id="6"><ingredient id="57" count="50000000"/><production id="5592" count="100"/></item><!-- Большое Зелье CP -->
+<item id="7"><ingredient id="57" count="50000000"/><production id="10166" count="100"/></item><!-- Зелье Востановления CP -->
+<item id="8"><ingredient id="57" count="15000000"/><production id="1374" count="100"/></item><!-- Большое Зелье Ускорения (Бега) -->
+<item id="9"><ingredient id="57" count="15000000"/><production id="1375" count="100"/></item><!-- Большое Зелье Стремительной Атаки -->
+<item id="10"><ingredient id="57" count="15000000"/><production id="6036" count="100"/></item><!-- Большое Зелье Ускорения Магии -->
+<item id="11"><ingredient id="57" count="70000000"/><production id="8786" count="100"/></item><!-- Перврбытное Зелье (Увеличивает сопротивление к отравлению и анестезии) -->
+<item id="12"><ingredient id="57" count="70000000"/><production id="13151" count="100"/></item><!-- Зелье Энергии -->
+<item id="13"><ingredient id="57" count="95000000"/><production id="5234" count="100"/></item><!-- Магическое Зелье (Большая Голова) -->
+</list>

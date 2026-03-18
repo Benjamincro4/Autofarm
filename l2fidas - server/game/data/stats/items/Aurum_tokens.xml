@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="items.xsd">
+
+  <item id="35050" type="EtcItem" name="Aurum Heavy Look Token">
+    <set name="icon" val="Asuki_Aurum_Icon.armor_t501_u_i00" />
+    <set name="stackable" val="true" />
+    <set name="weight" val="0" />
+    <set name="price" val="0" />
+  </item>
+
+  <item id="35051" type="EtcItem" name="Aurum Light Look Token">
+    <set name="icon" val="Asuki_Aurum_Icon.armor_t502_u_i00" />
+    <set name="stackable" val="true" />
+    <set name="weight" val="0" />
+    <set name="price" val="0" />
+  </item>
+
+  <item id="35052" type="EtcItem" name="Aurum Robe Look Token">
+    <set name="icon" val="Asuki_Aurum_Icon.armor_t503_u_i00" />
+    <set name="stackable" val="true" />
+    <set name="weight" val="0" />
+    <set name="price" val="0" />
+  </item>
+
+</list>

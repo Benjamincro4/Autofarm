@@ -1,0 +1,75 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Christmas -->
+<!-- 2013 by Apollon -->
+
+<list maintainEnchantment="true">
+  
+   <!-- Santa's Antlers -->
+  <item id="1">
+    <ingredient id="14612" count="300"/>
+    <production id="8936" count="1"/>
+  </item>
+  <!-- Santa's Hat -->
+  <item id="2">
+    <ingredient id="14612" count="300"/>
+    <production id="7836" count="1"/>
+  </item>
+  <!-- Gran Kain's Firework -->
+  <item id="3">
+    <ingredient id="14612" count="100"/>
+    <production id="13268" count="10"/>
+  </item>
+  <!-- Gran Kain's Large Firework -->
+  <item id="4">
+    <ingredient id="14612" count="100"/>
+    <production id="13269" count="10"/>
+  </item>
+  <!-- Red Firework -->
+  <item id="5">
+    <ingredient id="14612" count="250"/>
+    <production id="20870" count="5"/>
+  </item>
+  <!-- Gold Firework -->
+  <item id="6">
+    <ingredient id="14612" count="250"/>
+    <production id="20871" count="5"/>
+  </item>
+  <!-- Blue Firework -->
+  <item id="7">
+    <ingredient id="14612" count="250"/>
+    <production id="20872" count="5"/>
+  </item>
+  <!-- Pink Firework -->
+  <item id="8">
+    <ingredient id="14612" count="250"/>
+    <production id="20873" count="5"/>
+  </item>
+  <!-- White Firework -->
+  <item id="9">
+    <ingredient id="14612" count="250"/>
+    <production id="20874" count="5"/>
+  </item>
+  <!-- Silver Firework -->
+  <item id="10">
+    <ingredient id="14612" count="250"/>
+    <production id="20875" count="5"/>
+  </item>
+    <!-- Revita Pop -->
+  <item id="11">
+    <ingredient id="14612" count="300"/>
+    <production id="20034" count="5"/>
+  </item>
+      <!-- Agathion Seal Bracelet - Rudolph -->
+  <item id="12">
+    <ingredient id="14612" count="15"/>
+    <production id="14617" count="1"/>
+  </item>
+        <!-- Color Name -->
+  <item id="13">
+    <ingredient id="14612" count="10"/>
+    <production id="13021" count="1"/>
+  </item>
+
+
+</list>

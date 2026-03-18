@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="settings.xsd">
+	<event id="0">
+		<property name="ipCheckOnRegister" value="False" />
+		<property name="registerTime" value="600" />
+		<property name="voteTime" value="0" />
+		<property name="voteEnabled" value="True" />
+		<property name="schedulerEnabled" value="True" />
+		<property name="firstAfterStartTime" value="60" />
+		<property name="managerNpcId" value="9999" />
+		<property name="showVotePopupAt" value="30" />
+		<property name="votePopupEnabled" value="True" />
+		<property name="debug" value="False" />
+		<property name="statTrackingEnabled" value="True" />
+		<property name="eventBufferEnabled" value="True" />
+		<property name="allowedBuffsList" value="1504,1502,1499,1500,1501" />
+		<property name="maxBuffNum" value="4" />
+		<property name="friendlyFireEnabled" value="False" />
+		<property name="restartAllowed" value="False" />
+		<property name="showEscapeEffect" value="True" />
+		<property name="enableMiniEvents" value="True" />
+		<property name="npcBufferId" value="555" />
+		<restriction type="item" ids="0" />
+		<restriction type="skill" ids="0" />
+		<!-- ENABLE/DISABLE EVENTS -->
+		<property name="eventEnabled_1" value="True" /> 	<!-- Deathmatch -->
+		<property name="eventEnabled_2" value="True" /> 	<!-- Domination -->
+		<property name="eventEnabled_3" value="True" /> 	<!-- Double Domination -->
+		<property name="eventEnabled_4" value="True" /> 	<!-- Last Man Standing -->
+		<property name="eventEnabled_5" value="True" />	<!-- Lucky Chest -->
+		<property name="eventEnabled_6" value="True" />	<!-- Simon Says -->
+		<property name="eventEnabled_7" value="True" />	<!-- Team vs Team -->
+		<property name="eventEnabled_8" value="False" />	<!-- VIP Team vs Team -->
+		<property name="eventEnabled_9" value="True" />	<!-- Zombie -->
+		<property name="eventEnabled_10" value="True" />	<!-- Capture the Flag -->
+		<property name="eventEnabled_11" value="True" />	<!-- Russian Roulette -->
+		<property name="eventEnabled_12" value="True" />	<!-- Bomb Fight -->
+		<property name="eventEnabled_13" value="True" />	<!-- Mutant -->
+		<property name="eventEnabled_14" value="True" />	<!-- Battlefield -->
+     </event>
+</events>

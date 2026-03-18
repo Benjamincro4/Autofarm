@@ -1,0 +1,5 @@
+<list>
+	<string id="TEST_MESSAGE" text="Test message" />
+	<string id="LONG_TIME_EVENT_STARTS" text="Event is in process!" />
+	<string id="LONG_TIME_EVENT_ENDS" text="Event ends!" />
+</list>

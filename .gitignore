@@ -1,0 +1,16 @@
+/.settings
+/bin
+/build
+/classes
+/game
+/login
+/l2fidas - server/login/log
+/l2fidas - server/game/log
+/l2fidas - server/game/config/hexid.txt
+/l2fidas - server/game/l2jserver.jar
+/l2fidas - server/login/l2jserver.jar
+/l2fidas - server/startServer.bat
+/l2fidas - server/stopServer.bat
+/l2fidas - server/game/config/ipconfig.xml
+/l2fidas - server/game/data/scripts/events/HideAndSeek/npc_save.properties
+.classpath

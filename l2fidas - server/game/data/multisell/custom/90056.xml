@@ -1,0 +1,47 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Atribute Stones -->
+<!-- © 2010 by mathuza -->
+
+<list maintainEnchantment="true">
+
+
+ <!-- Fire Crystal -->
+  <item id="1">
+    <ingredient id="57" count="5"/>
+    <production id="9552" count="1"/>
+  </item>
+
+  <!-- Water Crystal -->
+  <item id="2">
+    <ingredient id="57" count="5"/>
+    <production id="9553" count="1"/>
+  </item>
+
+  <!-- Earth Crystal -->
+  <item id="3">
+    <ingredient id="57" count="5"/>
+    <production id="9554" count="1"/>
+  </item>
+
+  <!-- Wind Crystal -->
+  <item id="4">
+    <ingredient id="57" count="5"/>
+    <production id="9555" count="1"/>
+  </item>
+
+  <!-- Dark Crystal -->
+  <item id="5">
+    <ingredient id="57" count="5"/>
+    <production id="9556" count="1"/>
+  </item>
+
+  <!-- Divine Crystal -->
+  <item id="6">
+    <ingredient id="57" count="5"/>
+    <production id="9557" count="1"/>
+  </item>
+  
+
+  
+</list>

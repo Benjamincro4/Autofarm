@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance name="Disciple's Necropolis (past)">
+	<activityTime val="60" />
+	<emptyDestroyTime val="1" />
+	<allowSummon val="false" />
+	<spawnPoint spawnX="171854" spawnY="-17476" spawnZ="-4896" />
+	<spawnlist>
+		<group name="general">
+		<!-- Leon -->
+	    <spawn npcId="32587" x="-89400" y="216125" z="-7500" heading="40960" respawn="0" />
+	    <!-- Shunaiman -->
+	    <spawn npcId="32586" x="-89456" y="216184" z="-7500" heading="40960" respawn="0" />
+	    <!-- Court Magician -->
+	    <spawn npcId="32598" x="-89549" y="220640" z="-7500" heading="0" respawn="0" />
+	    <spawn npcId="32598" x="-84944" y="220640" z="-7500" heading="0" respawn="0" />
+		<!-- Disciple's Gatekeeper -->
+	    <spawn npcId="32657" x="-84398" y="216106" z="-7500" heading="32768" respawn="0" />
+		<!-- Controler -->
+	    <spawn npcId="32592" x="-83177" y="216752" z="-7518" heading="0" respawn="0" />
+		</group>
+	</spawnlist>
+	<doorlist>
+		<door doorId="17240101" />
+		<door doorId="17240102" />
+		<door doorId="17240103" />
+		<door doorId="17240104" />
+		<door doorId="17240105" />
+		<door doorId="17240106" />
+		<door doorId="17240107" />
+		<door doorId="17240108" />
+		<door doorId="17240109" />
+		<door doorId="17240110" />
+		<door doorId="17240111" />
+	</doorlist>
+</instance>

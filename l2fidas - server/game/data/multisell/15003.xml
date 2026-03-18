@@ -1,0 +1,13 @@
+﻿<?xml version='1.0' encoding='utf-8'?><!-- Знаки -->
+<list>
+<item id="1"><ingredient id="6673" count="120"/><ingredient id="9912" count="1250"/><production id="12811" count="1"/></item><!-- Знак Аркана простой -->
+<item id="2"><ingredient id="6673" count="190"/><ingredient id="9912" count="2250"/><production id="13077" count="1"/></item><!-- Знак Аркана Хаотический -->
+<item id="3"><ingredient id="6673" count="240"/><ingredient id="9912" count="3250"/><production id="13078" count="1"/></item><!-- Знак Аркана Фулл -->
+<item id="4"><ingredient id="6673" count="422"/><ingredient id="9912" count="4250"/><production id="12812" count="1"/></item><!-- Знак Династии -->
+<item id="5"><ingredient id="6673" count="512"/><ingredient id="9912" count="5250"/><production id="10118" count="1"/></item><!-- Знак Династии Хаотический -->
+<item id="6"><ingredient id="6673" count="688"/><ingredient id="9912" count="6250"/><production id="10119" count="1"/></item><!-- Знак Династии Фулл -->
+<item id="7"><ingredient id="6673" count="790"/><ingredient id="9912" count="7250"/><production id="15622" count="1"/></item><!-- Знак Дестино -->
+<item id="8"><ingredient id="6673" count="860"/><ingredient id="9912" count="8250"/><production id="12813" count="1"/></item><!-- Знак Венеры -->
+<item id="9"><ingredient id="6673" count="1280"/><ingredient id="9912" count="10250"/><production id="15605" count="1"/></item><!-- Знак Верпеса -->
+<item id="10"><ingredient id="6673" count="2600"/><ingredient id="9912" count="18250"/><production id="15588" count="1"/></item><!-- Знак Элегии -->
+</list>

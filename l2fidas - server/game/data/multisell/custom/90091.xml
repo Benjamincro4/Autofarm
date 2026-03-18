@@ -1,0 +1,111 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Created with Lineage II - Multisell Manager -->
+<!-- ©2011 by NeverMore -->
+
+<list maintainEnchantment="true">
+
+ <!-- Soul Crystals -->
+  <item id="10">
+    <ingredient id="22600" count="6"/>
+    <production id="9570" count="1"/>
+
+  </item>
+
+  <!-- Soul Crystals -->
+  <item id="11">
+    <ingredient id="22600" count="6"/>
+    <production id="9571" count="1"/>
+
+  </item>
+
+  <!-- Soul Crystals -->
+  <item id="12">
+    <ingredient id="22600" count="6"/>
+    <production id="9572" count="1"/>
+	
+  </item>  
+<!-- Soul Crystals -->
+  <item id="13">
+    <ingredient id="22600" count="8"/>
+    <production id="10480" count="1"/>
+	
+  </item>
+
+  <!-- Soul Crystals -->
+  <item id="14">
+    <ingredient id="22600" count="8"/>
+    <production id="10481" count="1"/>
+	
+  </item>
+
+  <!-- Soul Crystals -->
+  <item id="15">
+    <ingredient id="22600" count="8"/>
+    <production id="10482" count="1"/>
+	
+  </item>
+
+  <!-- Soul Crystals -->
+  <item id="16">
+    <ingredient id="22600" count="10"/>
+    <production id="13071" count="1"/>
+  
+  </item>
+
+  <!-- Soul Crystals -->
+  <item id="17">
+    <ingredient id="22600" count="10"/>
+    <production id="13072" count="1"/>
+ 
+ </item>
+
+  <!-- Soul Crystals -->
+  <item id="18">
+    <ingredient id="22600" count="10"/>
+    <production id="13073" count="1"/>
+
+	</item>
+
+<!-- Soul Crystals -->
+  <item id="19">
+    <ingredient id="22600" count="12"/>
+    <production id="15541" count="1"/>
+
+ </item>
+
+ <!-- Soul Crystals -->
+  <item id="20">
+    <ingredient id="22600" count="12"/>
+    <production id="15542" count="1"/>
+ 
+ </item>
+	
+  <!-- Soul Crystals -->
+  <item id="21">
+    <ingredient id="22600" count="12"/>
+    <production id="15543" count="1"/>
+ 
+ </item>
+ 
+  <!-- Soul Crystals -->
+  <item id="22">
+    <ingredient id="22600" count="14"/>
+    <production id="15826" count="1"/>
+ 
+ </item>
+ 
+  <!-- Soul Crystals -->
+  <item id="23">
+    <ingredient id="22600" count="14"/>
+    <production id="15827" count="1"/>
+ 
+ </item>
+ 
+   <!-- Soul Crystals -->
+  <item id="24">
+    <ingredient id="22600" count="14"/>
+    <production id="15828" count="1"/> 
+ </item>
+
+</list>

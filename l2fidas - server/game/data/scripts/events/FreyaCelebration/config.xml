@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event name="Freya Celebration" active="27 02 2009-28 02 2030" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/eventConfig.xsd">
+	<spawnlist>
+		<add npc="13296" x="-117161" y="46849" z="367" heading="49151" />
+		<add npc="13296" x="-84018" y="242963" z="-3730" heading="4096" />
+		<add npc="13296" x="45571" y="48374" z="-3060" heading="18000" />
+		<add npc="13296" x="-45272" y="-112689" z="-240" heading="0" />
+		<add npc="13296" x="11631" y="17576" z="-4585" heading="46900" />
+		<add npc="13296" x="115074" y="-178271" z="-884" heading="0" />
+		<add npc="13296" x="-13636" y="122088" z="-2989" heading="16384" />
+		<add npc="13296" x="-83163" y="151068" z="-3129" heading="0" />
+		<add npc="13296" x="17360" y="145038" z="-3041" heading="25000" />
+		<add npc="13296" x="111074" y="218924" z="-3543" heading="16384" />
+		<add npc="13296" x="83037" y="149324" z="-3464" heading="44000" />
+		<add npc="13296" x="81980" y="53805" z="-1529" heading="0" />
+		<add npc="13296" x="148552" y="26718" z="-2205" heading="32768" />
+		<add npc="13296" x="148248" y="-55660" z="-2781" heading="61439" />
+		<add npc="13296" x="86840" y="-142980" z="-1341" heading="26000" />
+		<add npc="13296" x="43245" y="-48454" z="-797" heading="17000" />
+	</spawnlist>
+	<messages>
+		<add type="onEnd" text="Freya Celebration: Event end!" />
+		<add type="onEnter" text="Freya Celebration: Event ongoing!" />
+	</messages>
+</event>

@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?><!-- Камни Стихии -->
+<list>
+<item id="1"><ingredient id="6673" count="7"/><production id="9546" count="1" enchant="0"/></item><!-- Fire Stone -->
+<item id="2"><ingredient id="6673" count="7"/><production id="9547" count="1" enchant="0"/></item><!-- Water Stone -->
+<item id="3"><ingredient id="6673" count="7"/><production id="9548" count="1" enchant="0"/></item><!-- Earth Stone -->
+<item id="4"><ingredient id="6673" count="7"/><production id="9549" count="1" enchant="0"/></item><!-- Wind Stone -->
+<item id="5"><ingredient id="6673" count="7"/><production id="9550" count="1" enchant="0"/></item><!-- Dark Stone -->
+<item id="6"><ingredient id="6673" count="7"/><production id="9551" count="1" enchant="0"/></item><!-- Divine Stone -->
+<item id="7"><ingredient id="9546" count="1"/><ingredient id="6673" count="15"/><production id="9552" count="1" enchant="0"/></item><!-- Fire Crystal -->
+<item id="8"><ingredient id="9547" count="1"/><ingredient id="6673" count="15"/><production id="9553" count="1" enchant="0"/></item><!-- Water Crystal -->
+<item id="9"><ingredient id="9548" count="1"/><ingredient id="6673" count="15"/><production id="9554" count="1" enchant="0"/></item><!-- Earth Crystal -->
+<item id="10"><ingredient id="9549" count="1"/><ingredient id="6673" count="15"/><production id="9555" count="1" enchant="0"/></item><!-- Wind Crystal -->
+<item id="11"><ingredient id="9550" count="1"/><ingredient id="6673" count="15"/><production id="9556" count="1" enchant="0"/></item><!-- Dark Crystal -->
+<item id="12"><ingredient id="9551" count="1"/><ingredient id="6673" count="15"/><production id="9557" count="1" enchant="0"/></item><!-- Divine Crystal -->
+<item id="13"><ingredient id="9552" count="1"/><ingredient id="6673" count="20"/><production id="9558" count="1" enchant="0"/></item><!-- Fire Jewel -->
+<item id="14"><ingredient id="9553" count="1"/><ingredient id="6673" count="20"/><production id="9559" count="1" enchant="0"/></item><!-- Water Jewel -->
+<item id="15"><ingredient id="9554" count="1"/><ingredient id="6673" count="20"/><production id="9560" count="1" enchant="0"/></item><!-- Earth Jewel -->
+<item id="51"><ingredient id="9555" count="1"/><ingredient id="6673" count="20"/><production id="9561" count="1" enchant="0"/></item><!-- Wind Jewel -->
+<item id="16"><ingredient id="9556" count="1"/><ingredient id="6673" count="20"/><production id="9562" count="1" enchant="0"/></item><!-- Dark Jewel -->
+<item id="17"><ingredient id="9557" count="1"/><ingredient id="6673" count="20"/><production id="9563" count="1" enchant="0"/></item><!-- Divine Jewel -->
+<item id="18"><ingredient id="9558" count="1"/><ingredient id="6673" count="30"/><production id="9564" count="1" enchant="0"/></item><!-- Fire Energy -->
+<item id="19"><ingredient id="9559" count="1"/><ingredient id="6673" count="30"/><production id="9565" count="1" enchant="0"/></item><!-- Water Energy -->
+<item id="20"><ingredient id="9560" count="1"/><ingredient id="6673" count="30"/><production id="9566" count="1" enchant="0"/></item><!-- Earth Energy -->
+<item id="21"><ingredient id="9561" count="1"/><ingredient id="6673" count="30"/><production id="9567" count="1" enchant="0"/></item><!-- Wind Energy -->
+<item id="22"><ingredient id="9562" count="1"/><ingredient id="6673" count="30"/><production id="9568" count="1" enchant="0"/></item><!-- Dark Energy -->
+<item id="23"><ingredient id="9563" count="1"/><ingredient id="6673" count="30"/><production id="9569" count="1" enchant="0"/></item><!-- Divine Energy -->
+</list>

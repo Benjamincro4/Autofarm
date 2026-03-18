@@ -1,0 +1,197 @@
+Adicionado Configurador L2Fidas para GameServer e LoginServer
+
+###############################################
+#################### FIX ######################
+NevitsHerald
+Angel Cat's Blessing - Event
+Nevit's Blessings
+Freya
+Zaken nightmare
+Sailren
+Quests sailren
+Multisell para Captain Mathias (ID: 31340) em Rune. = Exchange Blue Elmore Coins
+Captain Mathias mudado de L2Guard para L2Merchant
+Fix em alguns Agathions e suas skills
+Rocking Horse Mount Bracelet
+Ajuste na rota e no tempo dos Npcs Profhets
+Adicionado Walkers em DV
+Drop do item Will of Antharas dos Boss Behemoth Leader, Drake Lord, Dragon Beast. [Tired of Waiting]
+V�rias Updates | Skills, Droplist, Handlers 
+algumas instances/quests
+Knoriks, Dragons & Drakes de LOA atualizados e reorganizados
+Adicionado Walkers em DV
+Ai's para �reas, mobs, bosses e Npcs
+FIX nos itens: Jet Bike Mount Bracelet Pack e Jet Bike Mount Bracelet Pack - Event
+FIX nos itens: Jet Bike Mount Bracelet 7-Day Pack e Jet Bike Mount Bracelet 7-Day Pack - Event
+FIX nos itens: Jet Bike Mount Bracelet 30-Day Pack e Jet Bike Mount Bracelet 30-Day Pack - Event
+FIX nos itens: Color Name Pack e Color Name Pack - Event
+
+###############################################
+################### EVENTOS ###################
+Event: Crazy Rates (aumenta todas as rates por um tempo)
+Angel Cat
+AprilFoolsDay
+CatchATiger
+CharacterBirthday
+ChristmasIsHere
+FifthAnniversary
+FreyaCelebration
+GiftOfVitality
+HallowedYou
+HeavyMedal
+HideAndSeek
+HollyCow
+L2Day
+LastHero
+LoveYourGatekeeper
+MasterOfEnchanting
+NinjaAdventures
+SavingSanta
+SchoolDays
+Squash Event
+SuperStar
+TheValentineEvent
+TrickorTransmutation
+LuckyPig
+###############PHOENIX ENGINE:################
+Battlefield
+Bomb
+CTF
+DM
+Domination
+DoubleDomination
+LMS
+LuckyChest
+Mutant
+RussianRoulete
+TvT
+VIPTvT
+Zombie
+Evento Last Hero	
+###############################################
+############# COMANDOS DE ADMIN ###############
+//ClanFull (adiciona todas as skills + reputation)
+//dance (evento de dan�a)
+//setaio <nome do char> <dias>
+//removeaio <nome do char>
+//setvip <char_name> <tempo>(em dias) (adiciona vip ao jogador)
+//removevip <char_name> (retira vip do jogador)
+//banchat <nome do char> <tempo em minutos>
+//unbanchat <nome do char> <tempo em minutos>
+.tw_goto_ward
+//mass hero (da hero para todos online)
+###############################################
+######## COMANDOS DE DONO DE CASTELO ##########
+.opendoors (abre portas do castelo)
+.closedoors (fecha portas do castelo)
+.ridewyvern (monta no drag�o voador)
+###############################################
+########## COMANDOS DE LIDER DE CLAN ##########
+.set name
+.set home
+.set group
+.siege ( mostra estatsticas dos castelos e tamb�m permite o lider do clan registrar para siege)
+###############################################
+################## COMANDOS ###################
+.deposit (troca 1kkk de adena por 1 God Bar)
+.withdraw (troca 1 God Bar por 1kkk de adena)
+.changepassword (troca senha da conta dentro do jogo)
+.debug
+.hellbound (mostra status de hellbound)
+.lang (alterna entre os idiomas Ingl�s e Portugu�s)
+.online (mostra quantidade de jogadores online)
+.openatod
+.pmoff (desabilita o recebmento de PM)
+.pmon (habilita o recebmento de PM)
+.mypremium ( mostra data de t�rminio do servi�o de premium)
+.addpremium_1d (adquire premium por 1 dia)
+.addpremium_1w (adquire premium por 1 m�s)
+.grandboss (mostra se os Big Bosses est�o vivos ou mortos)
+.refusebuff (bloqueia o recebimento de buff)
+.allowbuff (desbloqueia o recebimento de buff)
+.repair (repara um char)
+.stats <nome do char> (mostra estatisticas do char)
+.up10 (Up do level 10 ao 20 em Gludio)
+.up20 (Up do level 20 ao 30 em Dion)
+.up30 (Up do level 30 ao 40 em Hardin�s Private Academy)
+.up40 (Up do level 40 ao 50 em kruma tower primeiro andar)
+.up50 (Up do level 50 ao 60 em The Cemetary)
+.up60 (Up do level 60 ao 70 em Wall of Argos)
+.up70 (Up do level 70 ao 80 em Ketra Orc Outpost)
+.up80 (Up acima do level 80 em Antharas' Lair)
+.tradeoff (desativa o recebimento de trade)
+.tradeon (ativa o recebimento de trade)
+.tvtjoin (registra no evento tvt)
+.tvtleave (retira registro do evento tvt)
+.tvt (mostra estatisticas do evento tvt)
+.expoff (desativa o ganho de XP e SP)
+.expon (ativa o ganho de XP e SP)
+.info (abre uma janela dentro do jogo mostrando informa��es do servidor)
+.engage (pede em casamento)
+.divorce (divorcia)
+.gotolove (teleporta at� seu marido/esposa)
+.shieldon
+.shieldoff
+.openatod (Serve para abrir todos os Ancient Tome of the Demon que o player tiver na bag, ao invez de ficar clicando eternamente)
+###############################################
+##################### MOD #####################
+Rewards for kill on TvT
+PvP/PK Rewards
+ao dar Shift+Click em algum char ou npc ou monstro, mostrar� todos items e status dele.
+Bandeiras de clan nos Npcs sem quest
+Efeito de enchant rondom em todos os mobs e Npcs
+Efeito para char em modo de shop offline
+Balance Classe
+Lider de clan com nick de cor diferente
+Novos chars com titulo
+Nevit's Advent Blessing
+Arena Leaderboard
+Craft Leaderboard
+Fisherman Leaderboard
+PC Bang Points
+Prime Shop
+PvP Color System
+Sistema de consumiveis infinitosSS, BSS e Arrows
+Fake online players
+Aiox por dias
+Vip por dias
+Clan Full
+Mod quando morrer o c�u fica vermelho e da um som de Game Over
+Mod ao entrar em um clan o titulo muda altomaticamente para o do clan
+Mod aviso quando um Raid Boss renascer
+Mod Evento de dan�a
+Clan halls conquist�veis
+comando /unstuck com skill configuravel
+AutoRestart
+CommunityPvP
+
+###############################################
+################## PROTECOES ##################
+Protecao contra Bot
+Recurso AntiPHX
+Prote��o de overenchant
+AntiAfkTvt
+
+###############################################
+################# NPCS CUSTOM #################
+Npc Buffer - ID 555
+Npc Rank Stone - ID 8888
+Npc Offline Donate Informer - ID 24610
+Npc Phoenix Engine - ID 9999
+Npc Boss Respawn - ID 36602
+Npc ClanSearcher - ID 36606
+Npc Mudar cor do Nome - ID 49295
+Npc Delevar (diminuir level do char) - ID 36601
+Npc NoblesseManager - ID 49296
+Npc Comprar Bracelete - ID 30098
+Npc Top PvpPk - ID 36602
+
+###############################################
+############## SYSTEM EXCLUSIVA ###############
+Fix icones de todas as Shirt's
+Fix Nome da skill "Stripe" para "Striped"
+Adicionado nomes de novos terrirorios H5
+Fix formato/idioma para adicionar acentos
+Fix Efeitos H5
+
+-----------------------------------------------

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="22600" type="EtcItem" name="L2Fidas Coin">
+		<set name="icon" val="icon.etc_coins_gold_i00" />
+		<set name="immediate_effect" val="1" />
+		<set name="material" val="paper" />
+		<set name="price" val="1" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="true" />
+		<set name="is_depositable" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="22601" type="EtcItem" name="L2Fidas VIP+ 7days">
+		<set name="icon" val="iconVIP.vip_gold_coin_i00" />
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="potion" />
+		<set name="immediate_effect" val="1" />
+		<set name="material" val="gold" />
+		<set name="weight" val="10" />
+		<set name="price" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2024-1" />
+	</item>
+	<item id="22602" type="EtcItem" name="L2Fidas VIP+ 30days">
+        <set name="icon" val="iconVIP.vip_gold_coin_i00" />
+        <set name="default_action" val="skill_reduce" />
+        <set name="etcitem_type" val="scroll" />
+        <set name="material" val="paper" />
+        <set name="immediate_effect" val="1" />
+        <set name="weight" val="10" />
+        <set name="price" val="100" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="is_stackable" val="false" />
+        <set name="handler" val="ItemSkills" />
+        <set name="item_skill" val="2024-1" />
+    </item>
+	<item id="22603" type="EtcItem" name="L2Fidas VIP 7days">
+		<set name="icon" val="iconVIP.vip_silver_coin_i00" />
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="potion" />
+		<set name="immediate_effect" val="1" />
+		<set name="material" val="gold" />
+		<set name="weight" val="10" />
+		<set name="price" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2024-1" />
+	</item>
+	<item id="22604" type="EtcItem" name="L2Fidas VIP 30days">
+		<set name="icon" val="iconVIP.vip_silver_coin_i00" />
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="potion" />
+		<set name="immediate_effect" val="1" />
+		<set name="material" val="gold" />
+		<set name="weight" val="10" />
+		<set name="price" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2024-1" />
+	</item>
+	<item id="22605" type="EtcItem" name="L2Fidas Become Noble">
+		<set name="icon" val="icon.skill1323" />
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="potion" />
+		<set name="immediate_effect" val="1" />
+		<set name="material" val="paper" />
+		<set name="weight" val="10" />
+		<set name="price" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2024-1" />
+	</item>
+	<item id="22606" type="EtcItem" name="L2Fidas Clan Lv8 + Skills">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="potion" />
+		<set name="immediate_effect" val="1" />
+		<set name="material" val="paper" />
+		<set name="weight" val="10" />
+		<set name="price" val="100" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2024-1" />
+	</item>
+	<item id="22607" type="EtcItem" name="L2Fidas Vote">
+		<set name="icon" val="icon.etc_coin_of_fair_i00" />
+		<set name="immediate_effect" val="1" />
+		<set name="material" val="gold" />
+		<set name="price" val="1" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="true" />
+		<set name="is_depositable" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="22608" type="EtcItem" name="L2Fidas Event">
+		<set name="icon" val="icon.etc_pig_adena_i00" />
+		<set name="immediate_effect" val="1" />
+		<set name="material" val="gold" />
+		<set name="price" val="1" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="true" />
+		<set name="is_depositable" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="22609" type="EtcItem" name="L2Fidas Extra 20% XP/SP 2h">
+		<set name="icon" val="icon.etc_exp_point_i00" />
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="potion" />
+		<set name="immediate_effect" val="1" />
+		<set name="material" val="paper" />
+		<set name="weight" val="10" />
+		<set name="price" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="true" />
+		<set name="is_stackable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2024-1" />
+	</item>
+	<item id="22610" type="EtcItem" name="L2Fidas Extra 15% Drop 2h">
+		<set name="icon" val="icon.etc_adena_i00" />
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="potion" />
+		<set name="immediate_effect" val="1" />
+		<set name="material" val="paper" />
+		<set name="weight" val="10" />
+		<set name="price" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="true" />
+		<set name="is_stackable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2024-1" />
+	</item>
+	<item id="22611" type="EtcItem" name="L2Fidas Extra 10% Spoil 2h">
+		<set name="icon" val="icon.skill0254" />
+		<set name="default_action" val="skill_reduce" />
+		<set name="etcitem_type" val="potion" />
+		<set name="immediate_effect" val="1" />
+		<set name="material" val="paper" />
+		<set name="weight" val="10" />
+		<set name="price" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="true" />
+		<set name="is_stackable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<set name="item_skill" val="2024-1" />
+	</item>
+</list>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="items.xsd">
+
+ <armor id="36572" name="LionHead Helmet">
+    <set name="crystal_count" value="1205"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="price" value="25107000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="530"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="109"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36573" name="LionHead Leather Helmet">
+    <set name="crystal_count" value="1205"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="25107000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="530"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="109"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36574" name="LionHead Circlet">
+    <set name="crystal_count" value="1205"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_circlet_i00"/>
+    <set name="price" value="25107000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="530"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="109"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36575" name="LionHead Breastplate">
+    <set name="crystal_count" value="3214"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t91_u_i00"/>
+    <set name="price" value="66953000"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="7520"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="268"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36576" name="LionHead Leather Breastplate">
+    <set name="crystal_count" value="2410"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t92_u_i00"/>
+    <set name="price" value="50215000"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="4140"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="200"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36577" name="LionHead Tunic">
+    <set name="crystal_count" value="2410"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t93_u_i00"/>
+    <set name="price" value="50215000"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="1750"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="134"/>
+      <add stat="maxMp" order="0x10" value="655"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36578" name="LionHead Gaiter">
+    <set name="crystal_count" value="2009"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t91_l_i00"/>
+    <set name="price" value="41846000"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="3170"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="167"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36579" name="LionHead Leather Legging">
+    <set name="crystal_count" value="1506"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t92_l_i00"/>
+    <set name="price" value="31384000"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1320"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="126"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36580" name="LionHead Stockings">
+    <set name="crystal_count" value="1506"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t93_l_i00"/>
+    <set name="price" value="31384000"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="850"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="84"/>
+      <add stat="maxMp" order="0x10" value="433"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36581" name="LionHead Gauntlet">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t91_g_i00"/>
+    <set name="price" value="16738000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="510"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36582" name="LionHead Leather Gloves">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="Licon.armor_t92_g_i00"/>
+    <set name="price" value="16738000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="510"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36583" name="LionHead Gloves">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t93_g_i00"/>
+    <set name="price" value="16738000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="510"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36584" name="LionHead Boots">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t91_b_i00"/>
+    <set name="price" value="16738000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1070"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36585" name="LionHead Leather Boots">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t92_b_i00"/>
+    <set name="price" value="16738000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1070"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="36586" name="LionHead Shoes">
+    <set name="crystal_count" value="803"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t93_b_i00"/>
+    <set name="price" value="16738000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1070"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+</list>

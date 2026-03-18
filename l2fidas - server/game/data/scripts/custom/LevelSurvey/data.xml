@@ -1,0 +1,7 @@
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="data.xsd">
+	<survey level="61" title="Level Survey" content="You have achieved level 61!\nYou'll receive a gift that will help you accomplish your objectives and succeed in your adventures.">
+		<item id="15226" count="1" /> <!-- Dark Crystal Light Armor of Fortune Set Pack (10-day limited period) -->
+		<item id="15230" count="1" /> <!-- Dark Crystal Robe of Fortune Set Pack (10-day limited period) -->
+		<item id="15222" count="1" /> <!-- Fortune Heavy Armor of Nightmare Set Pack (10-day limited period) -->
+	</survey>
+</list>

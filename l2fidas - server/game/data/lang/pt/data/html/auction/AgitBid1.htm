@@ -1,0 +1,22 @@
+<html><body>
+<font color="LEVEL">Lances podem ser feitos em apenas um Clan Hall por vez.</font> Quando um lance é submetido, seu valor deve estar <font color="LEVEL">depositado</font> do banco do Clan para o leilão <font color="LEVEL">10% do valor do lance é um imposto sobre transacções</font> não pode ser devolvido.<br>
+<font color="LEVEL">O lance</font> deve ser superior ao preço de lance mínimo ou preço de oferta anterior e do clã que der o lance mais alto no final do leilão ganha.<br>
+Atualmente tem <font color="aaccff">%PLEDGE_ADENA%</font> adena no banco do Clan. O lance mínimo possível é <font color="aaccff">%AGIT_AUCTION_MINBID%</font> adena.<br>
+Quanto você deseja dar no seu lance?
+<table width=270 border=0>
+<tr>
+<td width=220 align=right><edit var=bidprice width=230 align=right type=number></td>
+<td width=40 align=right>adena</td>
+</tr>
+</table>
+<img src="L2UI.SquareBlank" width=270 height=10>
+<img src="L2UI.SquareWhite" width=270 height=1>
+<img src="L2UI.SquareBlank" width=270 height=5>
+<table width=270 border=0>
+<tr>
+<td width=110></td>
+<td width=80 align=center><button action="%AGIT_LINK_BACK%" value="Voltar" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=80 align=center><button action="bypass -h npc_%objectId%_bid $bidprice" value="Confirmar" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+</body></html>

@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<list maintainEnchantment="true">
+  <!-- Become Noble -->
+  <item id="1">
+    <production id="22605" count="1"/>     
+	  <ingredient id="22600" count="10"/>
+  </item>
+</list>

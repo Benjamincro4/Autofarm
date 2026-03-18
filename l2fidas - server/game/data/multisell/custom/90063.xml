@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Pets -->
+
+<list maintainEnchantment="true">
+  <!-- Dragonflute of Wind -->
+  <item id="1">
+    <production id="4422" count="1"/>     
+	<ingredient id="57" count="400000000"/>
+  </item>
+
+  <!-- Dragon Bugle of Star -->
+  <item id="4">
+    <production id="4423" count="1"/>     
+	<ingredient id="57" count="400000000"/>
+  </item>
+
+  <!-- Dragon Bugle of Twilight -->
+  <item id="5">
+    <production id="4424" count="1"/>     
+	<ingredient id="57" count="400000000"/>
+  </item>
+
+  <!-- Dragon Bugle of Wind -->
+  <item id="6">
+    <production id="9882" count="1"/>     
+	<ingredient id="57" count="400000000"/>
+  </item>
+
+  <!-- Baby Buffalo Panpipe -->
+  <item id="7">
+    <production id="10311" count="1"/>     
+	<ingredient id="57" count="400000000"/>
+  </item>
+
+  <!-- Baby Cougar Chime -->
+  <item id="8">
+    <production id="10312" count="1"/>     
+	<ingredient id="57" count="400000000"/>
+  </item>
+
+  <!-- Baby Kookaburra Ocarina -->
+  <item id="9">
+    <production id="10313" count="1"/>     
+	<ingredient id="57" count="400000000"/>
+  </item>
+
+  <!-- Improved Buffalo Panpipe -->
+  <item id="10">
+    <production id="10163" count="1"/>     
+	<ingredient id="57" count="400000000"/>
+  </item>
+
+  <!-- Improved Cougar Chime -->
+  <item id="11">
+    <production id="10426" count="1"/>     
+	<ingredient id="57" count="400000000"/>
+  </item>
+
+</list>

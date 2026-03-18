@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Quest -->
+
+<list maintainEnchantment="true">
+
+
+  
+  <!-- Hellfire Oil
+   -->
+  <item id="2">
+    <ingredient id="57" count="500000000"/>
+    <production id="6033" count="1"/>
+  </item>
+  
+  <!-- Lunargent -->
+  <item id="3">
+    <ingredient id="57" count="100000000"/>
+    <production id="6029" count="1"/>
+  </item>
+  
+  
+  
+</list>

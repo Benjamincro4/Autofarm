@@ -1,0 +1,21 @@
+<Event ID="Heavy Medal Event" Active="26 Dec 2004-21 Dec 2012">
+   <Droplist>
+      <!-- <AllDrop Items="6393"
+         Count="1,1"
+         Chance="5%">
+      </AllDrop>
+      <AllDrop Items="6392"
+         Count="1,1"
+         Chance="15%">
+      </AllDrop> -->
+   </Droplist>
+   <Message
+      Type="OnJoin"
+      Msg="Heavy Medal Event Started!">
+   </Message>
+   <EventEnd>
+      <Take From="AllPlayers">
+         <!-- <Item ItemID="6392-6393"></Item> -->
+      </Take>
+   </EventEnd>
+</Event>
