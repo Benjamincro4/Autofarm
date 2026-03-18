@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS `character_autofarm` (
+  `char_id` INT UNSIGNED NOT NULL,
+  `config`  VARCHAR(2000) DEFAULT NULL,
+  PRIMARY KEY (`char_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

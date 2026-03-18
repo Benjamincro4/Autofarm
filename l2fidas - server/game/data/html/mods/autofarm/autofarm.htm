@@ -1,106 +1,160 @@
-<html>
-<body>
-<center>
-  <br>
-  <img src="L2UI_CT1.Windows_DF_Header_bg" width=256 height=32>
-  <table width=256 bgcolor="#000000">
-    <tr><td align=center height=8></td></tr>
-    <tr>
-      <td align=center>
-        <font color="LEVEL">&#9670; AutoFarm &#9670;</font>
-      </td>
-    </tr>
-    <tr><td align=center height=4></td></tr>
-    <tr>
-      <td align=center>
-        Estado: %status%
-      </td>
-    </tr>
-    <tr><td align=center height=6></td></tr>
-    <tr>
-      <td align=center>
-        <button value="ACTIVAR" action="bypass -h voice .enableautofarm" width=90 height=24 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-        <button value="DESACTIVAR" action="bypass -h voice .disableautofarm" width=90 height=24 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-      </td>
-    </tr>
-    <tr><td align=center height=8></td></tr>
-  </table>
+size=400x420size_end
+<html noscrollbar="1">
+   <title>AutoFarm (%name%)</title>
+   <body>
+      <center>
 
-  <img src="L2UI_CT1.Windows_DF_TooltipBg" width=256 height=2>
-  <br>
+		<br>
 
-  <!-- General Options -->
-  <table width=256 bgcolor="#000000">
-    <tr><td align=center height=4></td></tr>
-    <tr>
-      <td align=center>
-        <font color="LEVEL">Opciones Generales</font>
-      </td>
-    </tr>
-    <tr><td height=4></td></tr>
-    <tr>
-      <td width=20 align=right>
-        <button value=" " action="bypass -h voice .toggleassist" width=16 height=16 back="%assist_check%" fore="%assist_check%">
-      </td>
-      <td>Asistir al Lider de Party</td>
-    </tr>
-    <tr>
-      <td width=20 align=right>
-        <button value=" " action="bypass -h voice .togglerandomskills" width=16 height=16 back="%random_check%" fore="%random_check%">
-      </td>
-      <td>Usar Skills Aleatorias</td>
-    </tr>
-    <tr>
-      <td width=20 align=right>
-        <button value=" " action="bypass -h voice .togglekeeplocation" width=16 height=16 back="%location_check%" fore="%location_check%">
-      </td>
-      <td>Mantener Ubicacion Inicial</td>
-    </tr>
-    <tr><td height=4></td></tr>
-    <tr>
-      <td colspan=2 align=center>
-        <table width=240>
-          <tr>
-            <td align=left><font color="B09878">Radio de Busqueda:</font></td>
-            <td align=center><edit var="farm_distance" width=60 value="%farm_radius%"></td>
-            <td align=right>
-              <button value="Guardar" action="bypass -h voice .setdistance $farm_distance" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr><td height=4></td></tr>
-  </table>
+		<table background="l2ui_ct1.Windows_DF_TooltipBG" cellspacing=1 cellpadding=1 width=100%>
+			<tr>
+               <td align=center width=100%>
+                  <font name="hs12" color="e3e3e3">Status</font>
+               </td>
+            </tr>
+			<tr>
+				<td align=center>
+					<table align=center width=100% cellspacing=2 cellpadding=2>
+						<tr>
+							<td><img width=70 /></td>
+							<td><img width=70 /></td>
+							<td><img width=70 /></td>
+							<td><img width=70 /></td>
+						</tr>
+					    <tr>
+						   %state%
+						   <td align=center>
+							  <button value="Refresh" action="bypass autofarm_refresh %id%" width=70 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+						   </td>
+						   <td align=center>
+							  <button value="Reset" action="bypass autofarm_reset %id%" width=70 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+						   </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><img height=5/></td>
+			</tr>
+         </table>
 
-  <img src="L2UI_CT1.Windows_DF_TooltipBg" width=256 height=2>
-  <br>
+		<br>
 
-  <!-- Mode Selector -->
-  <table width=256 bgcolor="#000000">
-    <tr><td align=center height=4></td></tr>
-    <tr>
-      <td align=center>
-        <font color="LEVEL">Modo Actual: <font color="00BFFF">%mode%</font></font>
-      </td>
-    </tr>
-    <tr><td height=6></td></tr>
-    <tr>
-      <td align=center>
-        <button value="Combate" action="bypass -h voice .setmode combat" width=72 height=24 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-        <button value="Healer" action="bypass -h voice .setmode healer" width=72 height=24 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-        <button value="Spoiler" action="bypass -h voice .setmode spoiler" width=72 height=24 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-      </td>
-    </tr>
-    <tr><td height=6></td></tr>
-    <tr>
-      <td align=center>
-        <button value="&#9654; Config. Skills" action="bypass -h voice .autofarm_%mode_lower%" width=150 height=24 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-      </td>
-    </tr>
-    <tr><td height=4></td></tr>
-  </table>
+         <table background="l2ui_ct1.Windows_DF_TooltipBG" width=100% height=60>
+			<tr>
+				<td align=center width=100%>
+                  <font name="hs12" color="e3e3e3">Behavior</font>
+                </td>
+			</tr>
+			<tr>
+				<td>
+					<table width=100%>
+					    <tr>
+						   <td align=center>
+							  <font color="e3e3e3">Auto Attack: </font>
+						   </td>
+						   <td align=center>
+							  <combobox width=135 var="attack" list="%attack%">
+						   </td>
+						   <td align=center>
+							  <button value="Set" action="bypass autofarm_attack_type %id% $attack" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+						   </td>
+						</tr>
+						<tr>
+						   <td align=center>
+							  <font color="e3e3e3">Party Target: </font>
+						   </td>
+						   <td align=center>
+							  <combobox width=135 var="party" list="%party%">
+						   </td>
+						   <td align=center>
+							  <button value="Set" action="bypass autofarm_party_target %id% $party" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+						   </td>
+						</tr>
+						<tr>
+						   <td align=center>
+							  <font color="e3e3e3">Movement: </font>
+						   </td>
+						   <td align=center>
+							  <combobox width=135 var="move" list="%move%">
+						   </td>
+						   <td align=center>
+							  <button value="Set" action="bypass autofarm_move_type %id% $move" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+						   </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><img height=5/></td>
+			</tr>
+         </table>
 
-</center>
-</body>
+		 <br>
+
+         <table width=100% background="l2ui_ct1.Windows_DF_TooltipBG" cellspacing=2 cellpadding=2>
+             <tr>
+              <td align=center width=100%>
+                  <font name="hs12" color="e3e3e3">Targeting</font>
+               </td>
+            </tr>
+			<tr>
+				<td>
+					<table width=100% align=center>
+						<tr>
+							%search%
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><img height=5/></td>
+			</tr>
+         </table>
+
+         <br>
+
+         <table width=100%>
+			<tr>
+				<td>
+					<table width=100% background="l2ui_ct1.Windows_DF_TooltipBG">
+						<tr>
+						   <td align=center width=100%>
+							  <font name="hs12" color="e3e3e3">Auto Skill</font>
+						   </td>
+						</tr>
+						<tr>
+							<td>
+								<table>
+									<tr>
+										%ask%
+									</tr>
+									<tr>
+										<td><img height=5 /></td>
+									</tr>
+									<tr>
+										<td align=center><font name=hs10 color=LEVEL>1</font></td>
+										<td align=center><font name=hs10 color=LEVEL>2</font></td>
+										<td align=center><font name=hs10 color=LEVEL>3</font></td>
+										<td align=center><font name=hs10 color=LEVEL>4</font></td>
+										<td align=center><font name=hs10 color=LEVEL>5</font></td>
+										<td align=center><font name=hs10 color=LEVEL>6</font></td>
+										<td align=center><font name=hs10 color=LEVEL>7</font></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td><img height=5/></td>
+						</tr>
+					</table>
+				</td>
+				<td><img width=1/></td>
+			</tr>
+         </table>
+
+		 <br>
+
+      </center>
+   </body>
 </html>

@@ -26,6 +26,7 @@ import handlers.actionhandlers.L2ItemInstanceActionShift;
 import handlers.actionhandlers.L2NpcAction;
 import handlers.actionhandlers.L2NpcActionShift;
 import handlers.bypasshandlers.DressMeBypassHandler;
+import handlers.bypasshandlers.AutoFarm;
 import handlers.actionhandlers.L2PcInstanceAction;
 import handlers.actionhandlers.L2PcInstanceActionShift;
 import handlers.actionhandlers.L2PetInstanceAction;
@@ -519,6 +520,7 @@ public class MasterHandler
 			CustomLinks.class,
 			Leaderboard.class,
 			DressMeBypassHandler.class,
+			AutoFarm.class,
 		},
 		{
 			// Chat Handlers
