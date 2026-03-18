@@ -328,16 +328,11 @@ public final class L2PcInstance extends L2Playable
 {
 	// Autopots Definitions: AUTOFARM
 	private boolean autoPotionEnabled = false;
-	private boolean autoFarmEnabled = false;
 	private int healthThreshold = 70; // Porcentaje predeterminado de HP
 	private int manaThreshold = 30;   // Porcentaje predeterminado de MP
 	private int cpThreshold = 70;   // Porcentaje predeterminado de MP
 	private long lastPotionUse = 0;   // Para controlar la frecuencia de uso
 	private static final long POTION_COOLDOWN = 500;//8000; // Tiempo mínimo entre usos en ms
-	private boolean assistToPartyLeader = false;
-	private boolean useRandomSkills = false;
-	private boolean keepStartingFarmLocation = false;
-	private int autoFarmRadius = 0;
 	// Character Skill SQL String Definitions:
 	private static final String RESTORE_SKILLS_FOR_CHAR = "SELECT skill_id,skill_level FROM character_skills WHERE charId=? AND class_index=?";
 	private static final String ADD_NEW_SKILL = "INSERT INTO character_skills (charId,skill_id,skill_level,class_index) VALUES (?,?,?,?)";
@@ -2198,43 +2193,6 @@ public final class L2PcInstance extends L2Playable
 		return (_notifyQuestOfDeathList == null) || _notifyQuestOfDeathList.isEmpty();
 	}
 	
-	private Map<String, Integer> _autoFarmSkills = new HashMap<>();
-
-	public Map<String, Integer> getAutoFarmSkills() {
-	    return _autoFarmSkills;
-	}
-
-	public Map<String, Integer> getHealerSkills() {
-	    return _healerSkills;
-	}
-
-	public Map<String, Integer> getHealerHpThresholds() {
-	    return _healerHpThresholds;
-	}
-
-	public String getAutoFarmMode() {
-	    return _autoFarmMode;
-	}
-
-	public void setAutoFarmMode(String mode) {
-	    _autoFarmMode = mode;
-	}
-
-	public int getAutoFarmSpoilSkillId() {
-	    return _autoFarmSpoilSkillId;
-	}
-
-	public void setAutoFarmSpoilSkillId(int skillId) {
-	    _autoFarmSpoilSkillId = skillId;
-	}
-
-	public int getAutoFarmSweepSkillId() {
-	    return _autoFarmSweepSkillId;
-	}
-
-	public void setAutoFarmSweepSkillId(int skillId) {
-	    _autoFarmSweepSkillId = skillId;
-	}
 	
 	/**
 	 * @return a table containing all L2ShortCut of the L2PcInstance.
